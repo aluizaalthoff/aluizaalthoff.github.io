@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ana Althoff">
+	<meta name="description" content="Ana Althoff portfolio">
+	<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, minimal">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+	<title>Ana Althoff</title>
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- styles -->
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="preloader cursor-anim-enable dark-nav">
+	<!-- preloader-loading start -->
+	<div class="preloader__logoload-box">
+		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+		<div class="preloader__pulse"></div>
+	</div><!-- preloader-loading end -->
+
+	<!-- pointer start -->
+	<div class="pointer js-pointer" id="js-pointer">
+		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+		<i class="pointer__inner fas fa-search"></i>
+		<i class="pointer__inner fas fa-link"></i>
+	</div><!-- pointer end -->
+
+	<!-- to top btn start -->
+	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- to top btn end -->
+
+	<!-- scroll down btn start -->
+	<a href="#down"
+		class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- scroll down btn end -->
+
+	<!-- header start -->
+	<header class="fixed-header">
+		<!-- logo start -->
+		<div class="header-logo vertical js-midnight-color js-headroom">
+			<div class="hidden-box">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+				</a>
+			</div>
+		</div><!-- logo end -->
+
+		<!-- menu-icon start -->
+		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+			<div class="menu-icon__box">
+				<span class="menu-icon__inner"></span>
+				<span class="menu-icon__close"></span>
+			</div>
+		</div><!-- menu-icon end -->
+
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_center list_margin-20px hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</li>
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.instagram.com/ana.althoff.design/"
+							class="anim-slide tr-delay-04 js-pointer-small">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!-- header-social end -->
+	</header><!-- header end -->
+
+	<!-- NAVIGATION start -->
+	<nav class="nav-container pos-rel js-dropdown-active-box">
+		<!-- pos-rel start -->
+		<div class="pos-rel height-100perc">
+			<!-- dropdown close btn start -->
+			<div class="dropdown-close">
+				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+					<span class="dropdown-close__arrow"></span>
+				</div>
+			</div><!-- dropdown close btn end -->
+
+
+			<!-- menu-box start -->
+			<ul class="menu-box">
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box">
+					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Home">Home</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="About">About</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Work">Work</span>
+					</a>
+				<!-- dropdown start -->
+				<ul class="menu-box dropdown js-dropdown">
+					<li class="nav-btn-box">
+						<a href="work.html" class="nav-btn small js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Projects">Projects</span>
+						</a>
+					</li>
+				</ul><!-- dropdown end -->
+
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-slider-open">
+					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Contact">Contact</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+			</ul><!-- menu-box end -->
+
+			<!-- nav-information start -->
+			<div class="nav-information">
+				<!-- nav-email start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#"
+							class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
+
+					</div>
+				</div><!-- nav-email end -->
+
+
+				<!-- nav-phone start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">437 230
+							2861</a><br>
+
+					</div>
+				</div><!-- nav-phone end -->
+			</div><!-- nav-information end -->
+
+
+		</div><!-- pos-rel end -->
+	</nav><!-- navigation end -->
+
+	<!-- main start -->
+	<main class="js-animsition-overlay" data-animsition-overlay="true">
+		<!-- page head start -->
+		<section id="up" class="pos-rel bg-img-cover"
+			style="background-image:url(assets/images/backgrounds/A_cover.jpg)">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class=" container pos-rel flex-min-height-100vh">
+				<div class="padding-top-bottom-120 container small">
+					<!-- title start -->
+					<h2 class="headline-l after-preloader-anim">
+						<span class="anim-text-fill" data-text="Hi, i'm">Hi, i'm</span>
+						<span class="anim-text-fill tr-delay-01" data-text="Ana Althoff">Ana Althoff</span><br>
+						<span id="js-typewriter" class="text-color-red"></span><br>
+						<span class="anim-text-fill tr-delay-02" data-text="Based in">Based in</span>
+						<span class="anim-text-fill tr-delay-03" data-text="Toronto.">Toronto.</span>
+					</h2><!-- title end -->
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- page head end -->
+
+		<!-- about start -->
+		<section id="down" class="pos-rel section-bg-dark-1">
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- width-100perc start -->
+				<div class="width-100perc padding-top-100 padding-bottom-120">
+					<!-- flex-container start -->
+					<div class="container flex-container">
+						<!-- column start -->
+						<div class="four-columns column-100-100 padding-top-20">
+							<div class="column-r-margin-20-999">
+								<h2 class="headline-s anim-text-double-fill js-scrollanim" data-text="About Me">About Me
+								</h2>
+							</div>
+						</div><!-- column end -->
+
+						<!-- column start about-ana-->
+						<div id="about" class="eight-columns column-100-100 padding-top-20">
+							<div class="column-r-margin-20-999">
+								<p class="body-text-s anim-text-reveal js-scrollanim">Have you ever felt insecurity
+									about life choices? I have. As a child everybody knows (or think they do) what they
+									want to be when they grow up. I didn't, and this bothered me immensely. But what I
+									have always known is that I love to create. I'm completely devoted to the things I
+									set my mind to. The delight of puzzling out problems and executing the solutions is
+									my passion. Design is not merely making something beautiful is the art of
+									communicating effectively, translating concepts into tangible forms, to persuade
+									while entertaining. Now, I still don't have a profession that defines me, but I
+									know, with certainty, that I was born to create.</p>
+							</div>
+						</div><!-- column end -->
+
+					</div><!-- flex-container end -->
+
+
+				</div><!-- width-100perc end -->
+			</div><!-- pos-rel end -->
+		</section><!-- about end -->
+
+		<!-- portfolio start -->
+		<section class="pos-rel section-bg-dark-2">
+			<!-- pos-rel start -->
+			<div class="pos-rel padding-top-bottom-120">
+				<!-- container start -->
+				<div class="container">
+					<!-- title start -->
+					<h2 class="headline-xxxl text-center js-scrollanim">
+						<span class="anim-text-double-fill invert" data-text="Recent">Recent</span>
+						<span class="anim-text-double-fill tr-delay-02" data-text="Work">Work</span>
+					</h2><!-- title end -->
+
+					<!-- filter-buttons start -->
+					<div
+						class="list list_row list_center list_margin-30px padding-top-90 js-filter-button-box js-scrollanim">
+						<button class="list__item js-filter-button anim-fade js-pointer-small js-filter-button-active"
+							data-filter="*">
+							<span class="flip-btn" data-text="Everything">Everything</span>
+						</button>
+						<button class="list__item js-filter-button anim-fade tr-delay-01 js-pointer-small"
+							data-filter=".branding">
+							<span class="flip-btn" data-text="Branding">Branding</span>
+						</button>
+						<button class="list__item js-filter-button anim-fade tr-delay-02 js-pointer-small"
+							data-filter=".graphics">
+							<span class="flip-btn" data-text="Graphics">Graphics</span>
+						</button>
+						<button class="list__item js-filter-button anim-fade tr-delay-03 js-pointer-small"
+							data-filter=".ux">
+							<span class="flip-btn" data-text="UI/UX">UI/UX</span>
+						</button>
+						<button class="list__item js-filter-button anim-fade tr-delay-03 js-pointer-small"
+							data-filter=".fashion">
+							<span class="flip-btn" data-text="Fashion (coming soon)">Fashion (coming soon)</span>
+						</button>
+					</div><!-- filter-buttons end -->
+
+					<!-- js-isotope-filter-grid-box start -->
+					<div class="js-isotope-filter-grid-box">
+						<!-- empty grid -->
+						<div class="js-isotope-filter-grid-item empty-grid-1px-50-50-none"></div>
+						<div class="js-isotope-filter-grid-item empty-grid-100px-50-50-none"></div>
+
+						<!-- grid-item start -->
+						<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item branding">
+							<a href="project_mozzafiato.html"
+								class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+									<img class="anim-img-scale__inner"
+										src="assets/images/projects/mozzafiato/MOZZAFIATO_1000x1500_cover.png"
+										alt="project">
+								</div>
+								<!-- content start -->
+								<div class="margin-top-10 js-scrollanim">
+									<h3 class="subhead-m anim-text-double-fill" data-text="Mozzafiato">Mozzafiato</h3>
+									<br>
+									<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02"
+										data-text="Branding">Branding</span>
+								</div><!-- content end -->
+							</a>
+						</div><!-- grid-item end -->
+
+						<!-- grid-item start -->
+						<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item branding">
+							<a href="project_isabela_capeto.html"
+								class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+									<img class="anim-img-scale__inner"
+										src="assets/images/projects/isabela_capeto/isabela_1000x1500_frame.jpg"
+										alt="project">
+								</div>
+								<!-- content start -->
+								<div class="margin-top-10 js-scrollanim">
+									<h3 class="subhead-m anim-text-double-fill" data-text="Isabela Capeto + Stella Artois">Isabela Capeto + Stella Artois</h3>
+									<br>
+									<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02"
+										data-text="Branding">Branding</span>
+								</div><!-- content end -->
+							</a>
+						</div><!-- grid-item end -->
+
+						<!-- grid-item start -->
+						<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item ux">
+							<a href="project_e-cycle.html"
+								class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+									<img class="anim-img-scale__inner"
+										src="assets/images/projects/bike/overview2.png"
+										alt="project">
+								</div>
+								<!-- content start -->
+								<div class="margin-top-10 js-scrollanim">
+									<h3 class="subhead-m anim-text-double-fill" data-text="E-cycle">E-cycle</h3>
+									<br>
+									<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02"
+										data-text="UI/UX">UI/UX</span>
+								</div><!-- content end -->
+							</a>
+						</div><!-- grid-item end -->
+
+						<!-- grid-item start -->
+						<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item branding">
+							<a href="project_hayanne_goston.html"
+								class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+									<img class="anim-img-scale__inner"
+										src="assets/images/projects/hayanne_goston/hay_1000x1500_cover.png"
+										alt="project">
+								</div>
+								<!-- content start -->
+								<div class="margin-top-10 js-scrollanim">
+									<h3 class="subhead-m anim-text-double-fill" data-text="Hayanne Goston">Hayanne Goston</h3><br>
+									<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02"
+										data-text="Branding">Branding</span>
+								</div><!-- content end -->
+							</a>
+						</div><!-- grid-item end -->
+
+	
+
+						<!-- grid-item start -->
+						<div class="padding-top-60 grid-item-50-50-100 js-isotope-filter-grid-item graphics">
+							<a href="project_graphics.html"
+								class="grid-margin-box hover-box js-animsition-link js-pointer-large">
+								<div class="anim-img-scale anim-img-scale_hover js-img-scale">
+									<img class="anim-img-scale__inner"
+										src="assets/images/projects/graphics/bazar_1000x1500.jpg" alt="project">
+								</div>
+								<!-- content start -->
+								<div class="margin-top-10 js-scrollanim">
+									<h3 class="subhead-m anim-text-double-fill" data-text="Invitations and other graphics">Invitations and other graphics</h3><br>
+									<span class="headline-xxxxs margin-top-5 anim-text-double-fill invert tr-delay-02"
+										data-text="Graphics">Graphics</span>
+								</div><!-- content end -->
+							</a>
+						</div><!-- grid-item end -->
+
+					
+						
+					</div><!-- js-isotope-filter-grid-box end -->
+				</div><!-- container end -->
+			</div><!-- pos-rel end -->
+		</section><!-- portfolio end -->
+
+		
+		
+
+		
+
+
+	</main><!-- main end -->
+
+	<!-- footer start -->
+	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
+		style="background-image:url(assets/images/backgrounds/A_footer_full.jpg)">
+		<!-- bg-overlay -->
+		<div class="bg-overlay-black"></div>
+		<!-- pos-rel start -->
+		<div class="pos-rel flex-min-height-100vh">
+			<!-- container start -->
+			<div class="container padding-top-bottom-120">
+				<!-- footer-logo start -->
+				<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+					<img class="footer-logo__img" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+				</div><!-- footer-logo end -->
+
+				<!-- flex-container start -->
+				<div class="flex-container flex-align-center">
+					<!-- column start -->
+					<div class="eight-columns">
+						<h4 class="column-l-r-margin-10 headline-l footer-title">
+							Ana <br><span class="text-color-red">Althoff</span>
+						</h4>
+					</div><!-- column end -->
+					<!-- column start -->
+					<div class="four-columns footer-nav-mobile-padding">
+						<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+							<li>
+								<a href="index.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+							</li>
+							<li>
+								<a href="pages_about.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+							</li>
+							<li>
+								<a href="work.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
+							</li>
+							<li>
+								<a href="contact.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+							</li>
+						</ul>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+
+
+
+				<!-- footer-social start -->
+				<ul class="footer-social-desktop-hidden list list_center padding-top-90">
+					<li class="list__item">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small"
+							data-text="Linkedin">Linkedin</a>
+					</li>
+					<li class="list__item">
+						<a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small"
+							data-text="Instagram">Instagram</a>
+					</li>
+				</ul><!-- footer-social end -->
+
+
+			</div><!-- container end -->
+		</div><!-- pos-rel end -->
+	</footer><!-- footer end -->
+
+	<!-- scripts -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/footer-reveal.js"></script>
+	<script src="assets/js/typewriter.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/footer-reveal_init.js"></script>
+	<script src="assets/js/typewriter_init.js"></script>
+</body>
+
+</html>

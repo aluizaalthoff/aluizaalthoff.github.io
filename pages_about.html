@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ana Althoff">
+	<meta name="description" content="Ana Althoff portfolio">
+	<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, minimal">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+	<title>Ana Althoff</title>
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- styles -->
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="preloader cursor-anim-enable dark-nav">
+	<!-- preloader-loading start -->
+	<div class="preloader__logoload-box">
+		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+		<div class="preloader__pulse"></div>
+	</div><!-- preloader-loading end -->
+
+	<!-- pointer start -->
+	<div class="pointer js-pointer" id="js-pointer">
+		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+		<i class="pointer__inner fas fa-search"></i>
+		<i class="pointer__inner fas fa-link"></i>
+	</div><!-- pointer end -->
+
+	<!-- to top btn start -->
+	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- to top btn end -->
+
+	<!-- scroll down btn start -->
+	<a href="#down"
+		class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- scroll down btn end -->
+
+	<!-- header start -->
+	<header class="fixed-header">
+		<!-- logo start -->
+		<div class="header-logo vertical js-midnight-color js-headroom">
+			<div class="hidden-box">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+				</a>
+			</div>
+		</div><!-- logo end -->
+
+		<!-- menu-icon start -->
+		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+			<div class="menu-icon__box">
+				<span class="menu-icon__inner"></span>
+				<span class="menu-icon__close"></span>
+			</div>
+		</div><!-- menu-icon end -->
+
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_center list_margin-20px hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</li>
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.instagram.com/ana.althoff.design/"
+							class="anim-slide tr-delay-04 js-pointer-small">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!-- header-social end -->
+	</header><!-- header end -->
+
+	<!-- NAVIGATION start -->
+	<nav class="nav-container pos-rel js-dropdown-active-box">
+		<!-- pos-rel start -->
+		<div class="pos-rel height-100perc">
+			<!-- dropdown close btn start -->
+			<div class="dropdown-close">
+				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+					<span class="dropdown-close__arrow"></span>
+				</div>
+			</div><!-- dropdown close btn end -->
+
+
+			<!-- menu-box start -->
+			<ul class="menu-box">
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box">
+					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Home">Home</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="About">About</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Work">Work</span>
+					</a>
+				<!-- dropdown start -->
+				<ul class="menu-box dropdown js-dropdown">
+					<li class="nav-btn-box">
+						<a href="work.html" class="nav-btn small js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Projects">Projects</span>
+						</a>
+					</li>
+				</ul><!-- dropdown end -->
+
+				</li><!-- nav-btn-box end -->
+
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-slider-open">
+					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Contact">Contact</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+			</ul><!-- menu-box end -->
+
+			<!-- nav-information start -->
+			<div class="nav-information">
+				<!-- nav-email start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#"
+							class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
+
+					</div>
+				</div><!-- nav-email end -->
+
+
+				<!-- nav-phone start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">437 230
+							2861</a><br>
+
+					</div>
+				</div><!-- nav-phone end -->
+			</div><!-- nav-information end -->
+
+
+		</div><!-- pos-rel end -->
+	</nav><!-- navigation end -->
+
+	<!-- main start -->
+	<main class="js-animsition-overlay" data-animsition-overlay="true">
+		<!-- page head start -->
+
+
+
+
+
+
+
+
+
+
+
+		<section id="up" class="lines-section pos-rel anim-lines section-bg-dark-1">
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- width-100perc start -->
+				<div class="width-100perc padding-top-100 padding-bottom-120">
+					<!-- flex-container start -->
+					<div class="container flex-container">
+						<!-- column start -->
+						<div class="four-columns column-100-100 padding-top-20">
+							<div class="column-r-margin-20-999">
+								<img src="assets/images/about/ana.jpg" alt="">
+							</div>
+						</div><!-- column end -->
+
+						<!-- column start about-ana-->
+						<div id="about" class="eight-columns column-100-100 padding-top-20">
+							<h2 class="headline-s anim-text-double-fill js-scrollanim" data-text="About Me">About Me
+							</h2>
+							<div class="column-r-margin-20-999">
+								<p class="body-text-s anim-text-reveal js-scrollanim">I have been working with design
+									for the past 8 years and I still love every minute of it.<br><br>
+
+									At first I wanted to work in the fashion industry, I got a BA in Fashion, but one
+									thing led to
+									another and I started working as a surface designer. My eager and passion for
+									learning drove me
+									to move abroad to study Interactive media design. I’ve become obsessed with learning
+									new
+									softwares and producing visual content! I also love history and it’s easy to see in
+									my work a
+									touch of vintage styles. Bragging about myself, but being totally honest: I’m highly
+									proactive,
+									an eager learner and I give 100% of myself at each project in my life. If you are
+									looking for a
+									person like this, congratulations, you have found it! :)</p>
+							</div>
+						</div><!-- column end -->
+
+					</div><!-- flex-container end -->
+
+
+				</div><!-- width-100perc end -->
+			</div><!-- pos-rel end -->
+		</section><!-- about end -->
+
+
+
+
+		<!-- about start -->
+		<section class="lines-section pos-rel section-bg-dark-1">
+			<!-- lines-container start -->
+			<div class="lines-container pos-rel no-lines flex-min-height-100vh">
+				<!-- flex-container start -->
+				<div class="container flex-container reverse padding-top-30 padding-bottom-120">
+					<!-- column start -->
+					<div class="six-columns column-100-100 padding-top-90 padding padding-left-right-50">
+						<div class="column-r-margin-40-999">
+							<h2 class="headline-s hidden-box">
+								<span class="anim-slide js-scrollanim">Awards and Honors</span>
+							</h2>
+
+							<!-- awards start -->
+							<div class="padding-top-60">
+								<div class="js-scrollanim">
+
+									<!-- list start -->
+									<ul class="list text-color-b0b0b0 margin-top-20 anim-text-reveal tr-delay-02">
+										<li class="list__item red dot">
+											<p class="subhead-xxs">President's Honor List - Fall 2020</p>
+										</li>
+										<li class="list__item red dot">
+											<p class="subhead-xxs">President's Honor List - Summer 2020</p>
+										</li>
+										<li class="list__item red dot">
+											<p class="subhead-xxs">President's Honor List - Winter 2020</p>
+										</li>
+
+									</ul><!-- list end -->
+								</div>
+							</div><!-- awards end -->
+						</div>
+
+
+
+
+
+
+
+
+						<!-- exp -->
+						<div class="padding-top-90">
+							<h2 class="headline-s hidden-box">
+								<span class="anim-slide js-scrollanim">Experience</span>
+							</h2>
+							<!-- accordion start -->
+							<div
+								class="accordion accordion_underline js-accordion js-accordion-first-active margin-top-60">
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Enjoy
+										</h6>
+										<h6> Designer/ Coordinator | 2016-2019</h6>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+										Created seasonally appropriate, trend right original print and graphic artwork,
+										e mbroidery, jacquard and t-shirts. Responsible for design, colour, and
+										production of artwork, including coordinating with vendors. Created brochures,
+										trend boards and videos for marketing presentations to merchant and leadership
+										teams during seasonal milestone meetings.
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+
+
+
+
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Eclectic
+										</h6>
+										<h6> Surface Designer | 2015</h6>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+										Created seasonally appropriate, trend right original print and graphic artwork,
+										e mbroidery, jacquard and t-shirts. Responsible for design, colour, and
+										production of artwork, including coordinating with vendors. Created brochures,
+										trend boards and videos for marketing presentations to merchant and leadership
+										teams during seasonal milestone meetings.
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Lode
+										</h6>
+										<h6> Surface/Fashion Designer | 2012-2014</h6>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+										Responsible for all the pattern design and also by 2 lines as fashion designer.
+										Began by developing pattern designs, in less than 6 months I was fully
+										responsible for all the pattern design.
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Freelance
+										</h6>
+										<h6> 2012 - ...</h6>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+										Developed over the years graphic pieces such as catalogs, flyers, invitations,
+										brochures, posters, business cards, advertisements and web assets.
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+
+
+
+
+
+
+
+							</div><!-- accordion end -->
+
+
+						</div><!-- experience end -->
+
+
+
+						<div class="padding-top-90">
+							<h2 class="headline-s hidden-box">
+								<span class="anim-slide js-scrollanim">Education</span>
+							</h2>
+							<!-- accordion start -->
+							<div
+								class="accordion accordion_underline js-accordion js-accordion-first-active margin-top-60">
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Seneca
+											College
+
+										</h6>
+										<h6 class="margin-top-bottom-20">Diploma in Interactive Media Design | 2020 -
+											2021 | Toronto, ON
+										</h6>
+
+										<div class="accordion__content js-accordion-content">
+											<ul class="body-text-xs square">
+												<li class="list__item red dot"> GPA 4.0</li>
+												<li class="list__item red dot"> Excelled in Web development and 3D</li>
+											</ul>
+
+										</div>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Universidade Veiga de Almeida
+
+										</h6>
+										<h6 class="margin-top-bottom-20">Bachelor in Fashion Design | 2009 - 2014 | Rio de Janeiro, RJ 
+										</h6>
+										
+
+										<div class="accordion__content js-accordion-content">
+											<ul class="body-text-xs square">
+												<li class="list__item red dot">Excelled in Surface design</li>
+												<li class="list__item red dot"> Research thesis: UKIYO-E - Japanese art of the ordinary</li>
+											</ul>
+
+										</div>
+									</div>
+									<p class="accordion__content js-accordion-content body-text-xs">
+
+
+									</p>
+								</div>
+								<!-- accordion__tab end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div><!-- accordion end -->
+
+
+						</div><!-- education end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="six-columns column-100-100 padding-left-right-50">
+						<!-- wo we are start -->
+						<div class="padding-top-90">
+							<div class="js-scrollanim">
+								<h2 class="headline-s hidden-box padding-bottom-10">
+									<span class="anim-slide">Professional profile</span>
+								</h2>
+
+								<div class="margin-top-20">
+									<h5 class="padding-bottom-10">Strong aesthetic sense</h5>
+									<p class="body-text-s anim-text-reveal tr-delay-02">
+										Ability to think strategically and creatively, cotnceptualize and execute
+										projects
+										with attention to details that converge into powerful compositions always
+										aligned
+										with the business strategy.
+									</p>
+									<h5 class="padding-top-bottom-10">Robust sofware skills</h5>
+									<p class="body-text-s anim-text-reveal tr-delay-02">
+										Highly proficient in the Adobe Creative Suite and able to grasp new softwares
+										and
+										digital platforms quickly.
+									</p>
+									<h5 class="padding-top-bottom-10">Excellent time management</h5>
+									<p class="body-text-s anim-text-reveal tr-delay-02">
+										Strategic planning to meet deadlines, multitasking skills, approaching schedules
+										with flexibility to prioritize business demands.
+									</p>
+									<h5 class="padding-top-bottom-10">Effective interpersonal skills</h5>
+									<p class="body-text-s anim-text-reveal tr-delay-02">
+										Team-worker with great communication skills, active listener, open to receive
+										constructive criticism about artwork.
+									</p>
+								</div>
+							</div>
+						</div><!-- wo we are end -->
+
+						<!-- what we do start -->
+						<div class="padding-top-90">
+							<h2 class="headline-s hidden-box">
+								<span class="anim-slide js-scrollanim">What I Do</span>
+							</h2>
+							<!-- accordion start -->
+							<div
+								class="accordion accordion_underline js-accordion js-accordion-first-active margin-top-60">
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Branding
+										</h6>
+									</div>
+									<div class="accordion__content js-accordion-content">
+										<ul class="body-text-xs square">
+											<li class="list__item red dot"> Analyse brand positioning and consumer
+												insights</li>
+											<li class="list__item red dot"> Design research-based brand strategy</li>
+											<li class="list__item red dot"> Help shape and communicate our vision and
+												mission</li>
+											<li class="list__item red dot"> Translate brand elements into appealing
+												visual to the targeted audience</li>
+										</ul>
+
+									</div>
+								</div><!-- accordion__tab end -->
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Graphic
+											Design</h6>
+									</div>
+									<div class="accordion__content js-accordion-content">
+										<ul class="body-text-xs square">
+											<li class="list__item red dot"> Design web pages, brochures, logos, signs,
+												books, magazine covers, annual reports, advertisements, and other
+												communication materials.</li>
+											<li class="list__item red dot"> Conceptualize visuals based on requirements
+											</li>
+											<li class="list__item red dot"> Create images and layouts by hand or using
+												design software</li>
+											<li class="list__item red dot"> Test graphics across various media</li>
+										</ul>
+									</div>
+								</div><!-- accordion__tab end -->
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Front-end
+											development/UI
+										</h6>
+									</div>
+									<div class="accordion__content js-accordion-content">
+										<ul class="body-text-xs square">
+											<li class="list__item red dot"> Develop new user-facing features</li>
+											<li class="list__item red dot"> Build reusable code and libraries for future
+												use</li>
+											<li class="list__item red dot"> Ensure the technical feasibility of UI/UX
+												designs</li>
+											<li class="list__item red dot"> Optimize application for maximum speed and
+												scalability</li>
+										</ul>
+									</div>
+								</div><!-- accordion__tab end -->
+
+
+
+								<!-- accordion__tab start -->
+								<div class="accordion__tab js-accordion-tab">
+									<div class="accordion__btn js-accordion-btn js-pointer-large">
+										<h6 class="accordion__btn-title headline-xxs margin-top-bottom-20">Textile
+											Surface design</h6>
+									</div>
+									<div class="accordion__content js-accordion-content">
+										<ul class="body-text-xs square">
+											<li class="list__item red dot"> Conceptualize and create mood boards,
+												designs, concept presentations and samples based on seasonal forecasts
+											</li>
+											<li class="list__item red dot"> Research and identify seasonal color
+												palettes, prints, patterns, fragrances, styles and details</li>
+											<li class="list__item red dot"> Produce design ideas, sketches and samples
+												to present to customers</li>
+											<li class="list__item red dot"> Prepare production artwork with accurate
+												information and placement to send to the vendor for sampling or
+												production</li>
+										</ul>
+									</div>
+								</div><!-- accordion__tab end -->
+							</div><!-- accordion end -->
+						</div><!-- what we do end -->
+
+						<!-- skills start -->
+						<div class="padding-top-90">
+							<div class="js-scrollanim">
+								<h2 class="headline-s hidden-box">
+									<span class="anim-slide">Tools</span>
+								</h2>
+								<!-- list start -->
+								<ul class="list list_margin-20px margin-top-30">
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill" data-text="Photoshop">Photoshop</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-01"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-01" data-text="Illustrator">
+											Illustrator</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-01"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-02"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-02" data-text="Indesign">
+											Indesign</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-02"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-03"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-03" data-text="XD">XD</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-03"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-04"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05" data-text="HTML">HTML
+										</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05" data-text="CSS">CSS</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05"
+											data-text="After Effects">After Effects</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05" data-text="Premiere pro">
+											Premiere pro</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-04" data-text="Dimension">
+											Dimension</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-04"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-05"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05"
+											data-text="Blender(initiate)">Blender (initiate)</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+									<!-- progress-box start -->
+									<li class="list__item progress-bar">
+										<div class="headline-xxxxs anim-text-fill tr-delay-05" data-text="3Ds Max">3Ds
+											Max</div>
+										<div class="progress-bar__lines-box js-progress-animate-box"
+											data-progress="100%">
+											<div class="progress-bar__line js-progress-animate tr-delay-05"></div>
+											<div class="progress-bar__line red js-progress-animate tr-delay-06"></div>
+										</div>
+									</li><!-- progress-box end -->
+
+
+
+								</ul><!-- list end -->
+							</div>
+						</div><!-- skills end -->
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+			</div><!-- lines-container end -->
+		</section><!-- about end -->
+
+		
+	</main><!-- main end -->
+
+	<!-- footer start -->
+	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
+		style="background-image:url(assets/images/backgrounds/A_footer_full.jpg)">
+		<!-- bg-overlay -->
+		<div class="bg-overlay-black"></div>
+		<!-- pos-rel start -->
+		<div class="pos-rel flex-min-height-100vh">
+			<!-- container start -->
+			<div class="container padding-top-bottom-120">
+				<!-- footer-logo start -->
+				<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+					<img class="footer-logo__img" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+				</div><!-- footer-logo end -->
+
+				<!-- flex-container start -->
+				<div class="flex-container flex-align-center">
+					<!-- column start -->
+					<div class="eight-columns">
+						<h4 class="column-l-r-margin-10 headline-l footer-title">
+							Ana <br><span class="text-color-red">Althoff</span>
+						</h4>
+					</div><!-- column end -->
+					<!-- column start -->
+					<div class="four-columns footer-nav-mobile-padding">
+						<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+							<li>
+								<a href="index.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+							</li>
+							<li>
+								<a href="pages_about.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+							</li>
+							<li>
+								<a href="portfolio_work.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
+							</li>
+							<li>
+								<a href="contact.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+							</li>
+						</ul>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+
+
+
+				<!-- footer-social start -->
+				<ul class="footer-social-desktop-hidden list list_center padding-top-90">
+					<li class="list__item">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small"
+							data-text="Linkedin">Linkedin</a>
+					</li>
+					<li class="list__item">
+						<a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small"
+							data-text="Instagram">Instagram</a>
+					</li>
+				</ul><!-- footer-social end -->
+
+
+			</div><!-- container end -->
+		</div><!-- pos-rel end -->
+	</footer><!-- footer end -->
+
+	<!-- scripts -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/footer-reveal.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/footer-reveal_init.js"></script>
+</body>
+
+</html>

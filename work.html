@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ana Althoff">
+	<meta name="description" content="Ana Althoff portfolio">
+	<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, minimal">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+	<title>Ana Althoff</title>
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- styles -->
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="preloader cursor-anim-enable dark-nav">
+	<!-- preloader-loading start -->
+	<div class="preloader__logoload-box">
+		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+		<div class="preloader__pulse"></div>
+	</div><!-- preloader-loading end -->
+
+	<!-- pointer start -->
+	<div class="pointer js-pointer" id="js-pointer">
+		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+		<i class="pointer__inner fas fa-search"></i>
+		<i class="pointer__inner fas fa-link"></i>
+	</div><!-- pointer end -->
+
+	<!-- to top btn start -->
+	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- to top btn end -->
+
+	<!-- scroll down btn start -->
+	<a href="#down"
+		class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- scroll down btn end -->
+
+	<!-- header start -->
+	<header class="fixed-header">
+		<!-- logo start -->
+		<div class="header-logo vertical js-midnight-color js-headroom">
+			<div class="hidden-box">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+				</a>
+			</div>
+		</div><!-- logo end -->
+
+		<!-- menu-icon start -->
+		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+			<div class="menu-icon__box">
+				<span class="menu-icon__inner"></span>
+				<span class="menu-icon__close"></span>
+			</div>
+		</div><!-- menu-icon end -->
+
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_center list_margin-20px hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</li>
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.instagram.com/ana.althoff.design/"
+							class="anim-slide tr-delay-04 js-pointer-small">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!-- header-social end -->
+	</header><!-- header end -->
+
+	<!-- NAVIGATION start -->
+	<nav class="nav-container pos-rel js-dropdown-active-box">
+		<!-- pos-rel start -->
+		<div class="pos-rel height-100perc">
+			<!-- dropdown close btn start -->
+			<div class="dropdown-close">
+				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+					<span class="dropdown-close__arrow"></span>
+				</div>
+			</div><!-- dropdown close btn end -->
+
+
+			<!-- menu-box start -->
+			<ul class="menu-box">
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box">
+					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Home">Home</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="About">About</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Work">Work</span>
+					</a>
+				<!-- dropdown start -->
+				<ul class="menu-box dropdown js-dropdown">
+					<li class="nav-btn-box">
+						<a href="work.html" class="nav-btn small js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Projects">Projects</span>
+						</a>
+					</li>
+				</ul><!-- dropdown end -->
+
+				</li><!-- nav-btn-box end -->
+
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-slider-open">
+					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Contact">Contact</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+			</ul><!-- menu-box end -->
+
+			<!-- nav-information start -->
+			<div class="nav-information">
+				<!-- nav-email start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#"
+							class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
+
+					</div>
+				</div><!-- nav-email end -->
+
+
+				<!-- nav-phone start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">437 230
+							2861</a><br>
+
+					</div>
+				</div><!-- nav-phone end -->
+			</div><!-- nav-information end -->
+
+
+		</div><!-- pos-rel end -->
+	</nav><!-- navigation end -->
+
+		<!-- main start -->
+		<main class="js-animsition-overlay" data-animsition-overlay="true">
+			<!-- one-page-slider start -->
+			<section class="lines-section pos-rel anim-lines section-bg-dark-1 js-parallax-slider one-page-slider">
+				<!-- swiper-wrapper start -->
+				<div class="swiper-wrapper">
+					<!-- swiper-slide start -->
+					<div class="swiper-slide">
+						<!-- background start -->
+						<div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+							<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/projects/mozzafiato/cover.jpg);"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- background end -->
+
+						<div class="lines-container pos-rel no-lines d-flex flex-center-center height-100perc" data-swiper-parallax-y="60%">
+							<!-- title start -->
+							<h2 class="headline-xxxxl container small hidden-box">
+								<a href="project_mozzafiato.html" class="anim-slide js-pointer-large js-animsition-link">Mozzafiato</a>
+							</h2><!-- title end -->
+
+							<!-- portfolio-slider-details start -->
+							<div class="flex-container portfolio-details">
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal">Branding</span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-04">Toronto 2020</span>
+									</span>
+								</div>
+							</div><!-- portfolio-slider-details end -->
+
+							<!-- button start -->
+							<div class="pos-abs pos-bottom-center">
+								<div class="anim-fade tr-delay-03">
+									<a href="project_mozzafiato.html" class="border-btn js-pointer-large js-animsition-link">
+										<span class="border-btn__inner">Explore</span>
+										<span class="border-btn__lines-1"></span>
+										<span class="border-btn__lines-2"></span>
+									</a>
+								</div>
+							</div><!-- button end -->
+						</div>
+					</div><!-- swiper-slide end -->
+
+					<!-- swiper-slide start -->
+					<div class="swiper-slide">
+						<!-- background start -->
+						<div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+							<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/projects/isabela_capeto/isabela_cover_2400x1600.jpg);"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- background end -->
+
+						<div class="lines-container pos-rel no-lines d-flex flex-center-center height-100perc" data-swiper-parallax-y="60%">
+							<!-- title start -->
+							<h2 class="headline-xxxxl container small hidden-box">
+								<a href="project_isabela_capeto.html" class="anim-slide js-pointer-large js-animsition-link">Isabela Capeto + Stella Artois</a>
+							</h2><!-- title end -->
+
+							<!-- portfolio-slider-details start -->
+							<div class="flex-container portfolio-details">
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal">Branding</span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-04">Rio de Janeiro 2020</span>
+									</span>
+								</div>
+							</div><!-- portfolio-slider-details end -->
+
+							<!-- button start -->
+							<div class="pos-abs pos-bottom-center">
+								<div class="anim-fade tr-delay-03">
+									<a href="project_isabela_capeto.html" class="border-btn js-pointer-large js-animsition-link">
+										<span class="border-btn__inner">Explore</span>
+										<span class="border-btn__lines-1"></span>
+										<span class="border-btn__lines-2"></span>
+									</a>
+								</div>
+							</div><!-- button end -->
+						</div>
+					</div><!-- swiper-slide end -->
+
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<!-- background start -->
+							<div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+								<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/projects/bike/cover.png);"></div>
+								<div class="bg-overlay-black"></div>
+							</div><!-- background end -->
+	
+							<div class="lines-container pos-rel no-lines d-flex flex-center-center height-100perc" data-swiper-parallax-y="60%">
+								<!-- title start -->
+								<h2 class="headline-xxxxl container small hidden-box">
+									<a href="project_e-cycle.html" class="anim-slide js-pointer-large js-animsition-link">E-cycle</a>
+								</h2><!-- title end -->
+	
+								<!-- portfolio-slider-details start -->
+								<div class="flex-container portfolio-details">
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal">UI</span>
+										</span>
+									</div>
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+										</span>
+									</div>
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal tr-delay-04">Toronto 2020</span>
+										</span>
+									</div>
+								</div><!-- portfolio-slider-details end -->
+	
+								<!-- button start -->
+								<div class="pos-abs pos-bottom-center">
+									<div class="anim-fade tr-delay-03">
+										<a href="project_e-cycle.html" class="border-btn js-pointer-large js-animsition-link">
+											<span class="border-btn__inner">Explore</span>
+											<span class="border-btn__lines-1"></span>
+											<span class="border-btn__lines-2"></span>
+										</a>
+									</div>
+								</div><!-- button end -->
+							</div>
+						</div><!-- swiper-slide end -->
+
+						<!-- swiper-slide start -->
+					<div class="swiper-slide">
+						<!-- background start -->
+						<div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+							<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/projects/hayanne_goston/flower_2400x1600.png);"></div>
+							<div class="bg-overlay-black"></div>
+						</div><!-- background end -->
+
+						<div class="lines-container pos-rel no-lines d-flex flex-center-center height-100perc" data-swiper-parallax-y="60%">
+							<!-- title start -->
+							<h2 class="headline-xxxxl container small hidden-box">
+								<a href="project_hayanne_goston.html" class="anim-slide js-pointer-large js-animsition-link">Hayanne Goston</a>
+							</h2><!-- title end -->
+
+							<!-- portfolio-slider-details start -->
+							<div class="flex-container portfolio-details">
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal">Branding</span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+									</span>
+								</div>
+								<div class="four-columns column-50-100 padding-bottom-1 text-center">
+									<span class="hidden-box d-inline-block">
+										<span class="subhead-xxs anim-reveal tr-delay-04">Toronto/Rio de Janeiro 2021</span>
+									</span>
+								</div>
+							</div><!-- portfolio-slider-details end -->
+
+							<!-- button start -->
+							<div class="pos-abs pos-bottom-center">
+								<div class="anim-fade tr-delay-03">
+									<a href="project_hayanne_goston.html" class="border-btn js-pointer-large js-animsition-link">
+										<span class="border-btn__inner">Explore</span>
+										<span class="border-btn__lines-1"></span>
+										<span class="border-btn__lines-2"></span>
+									</a>
+								</div>
+							</div><!-- button end -->
+						</div>
+					</div><!-- swiper-slide end -->
+
+
+						<!-- swiper-slide start -->
+						<div class="swiper-slide">
+							<!-- background start -->
+							<div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+								<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/projects/graphics/bear_2400x1600.png);"></div>
+								<div class="bg-overlay-black"></div>
+							</div><!-- background end -->
+	
+							<div class="lines-container pos-rel no-lines d-flex flex-center-center height-100perc" data-swiper-parallax-y="60%">
+								<!-- title start -->
+								<h2 class="headline-xxxxl container small hidden-box">
+									<a href="project_graphics.html" class="anim-slide js-pointer-large js-animsition-link">Graphics</a>
+								</h2><!-- title end -->
+	
+								<!-- portfolio-slider-details start -->
+								<div class="flex-container portfolio-details">
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal"></span>
+										</span>
+									</div>
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+										</span>
+									</div>
+									<div class="four-columns column-50-100 padding-bottom-1 text-center">
+										<span class="hidden-box d-inline-block">
+											<span class="subhead-xxs anim-reveal tr-delay-04"></span>
+										</span>
+									</div>
+								</div><!-- portfolio-slider-details end -->
+	
+								<!-- button start -->
+								<div class="pos-abs pos-bottom-center">
+									<div class="anim-fade tr-delay-03">
+										<a href="project_graphics.html" class="border-btn js-pointer-large js-animsition-link">
+											<span class="border-btn__inner">Explore</span>
+											<span class="border-btn__lines-1"></span>
+											<span class="border-btn__lines-2"></span>
+										</a>
+									</div>
+								</div><!-- button end -->
+							</div>
+						</div><!-- swiper-slide end -->
+
+					
+
+				</div><!-- swiper-wrapper end -->
+
+				<!-- swiper-button-prev start -->
+				<div class="swiper-button-prev-box after-preloader-anim">
+					<div class="anim-fade">
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div><!-- swiper-button-prev end -->
+				<!-- swiper-button-next start -->
+				<div class="swiper-button-next-box after-preloader-anim">
+					<div class="anim-fade tr-delay-03">
+						<div class="swiper-button-next"></div>
+					</div>
+				</div><!-- swiper-button-next end -->
+
+				<!-- swiper-pagination start -->
+				<div class="pagination-box after-preloader-anim">
+					<div class="anim-fade tr-delay-06">
+						<div class="swiper-pagination counter-pagination"></div>
+					</div>
+				</div><!-- swiper-pagination end -->
+
+				<!-- lines-container -->
+				<div class="lines-container lines-pos-abs anim-lines"></div>
+			</section><!-- one-page-slider end -->
+		</main><!-- main end -->
+
+		<!-- scripts -->
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

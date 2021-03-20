@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ana Althoff">
+	<meta name="description" content="Ana Althoff portfolio">
+	<meta name="keywords" content="creative, modern, clean, html5, css3, portfolio, minimal">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+	<title>Ana Althoff</title>
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- styles -->
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="preloader cursor-anim-enable dark-nav">
+	<!-- preloader-loading start -->
+	<div class="preloader__logoload-box">
+		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+		<div class="preloader__pulse"></div>
+	</div><!-- preloader-loading end -->
+
+	<!-- pointer start -->
+	<div class="pointer js-pointer" id="js-pointer">
+		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+		<i class="pointer__inner fas fa-search"></i>
+		<i class="pointer__inner fas fa-link"></i>
+	</div><!-- pointer end -->
+
+	<!-- to top btn start -->
+	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- to top btn end -->
+
+	<!-- scroll down btn start -->
+	<a href="#down"
+		class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- scroll down btn end -->
+
+	<!-- header start -->
+	<header class="fixed-header">
+		<!-- logo start -->
+		<div class="header-logo vertical js-midnight-color js-headroom">
+			<div class="hidden-box">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+				</a>
+			</div>
+		</div><!-- logo end -->
+
+		<!-- menu-icon start -->
+		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+			<div class="menu-icon__box">
+				<span class="menu-icon__inner"></span>
+				<span class="menu-icon__close"></span>
+			</div>
+		</div><!-- menu-icon end -->
+
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_center list_margin-20px hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</li>
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.instagram.com/ana.althoff.design/"
+							class="anim-slide tr-delay-04 js-pointer-small">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!-- header-social end -->
+	</header><!-- header end -->
+
+	<!-- NAVIGATION start -->
+	<nav class="nav-container pos-rel js-dropdown-active-box">
+		<!-- pos-rel start -->
+		<div class="pos-rel height-100perc">
+			<!-- dropdown close btn start -->
+			<div class="dropdown-close">
+				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+					<span class="dropdown-close__arrow"></span>
+				</div>
+			</div><!-- dropdown close btn end -->
+
+
+			<!-- menu-box start -->
+			<ul class="menu-box">
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box">
+					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Home">Home</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="About">About</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Work">Work</span>
+					</a>
+				<!-- dropdown start -->
+				<ul class="menu-box dropdown js-dropdown">
+					<li class="nav-btn-box">
+						<a href="work.html" class="nav-btn small js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Projects">Projects</span>
+						</a>
+					</li>
+				</ul><!-- dropdown end -->
+
+				</li><!-- nav-btn-box end -->
+
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-slider-open">
+					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Contact">Contact</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+			</ul><!-- menu-box end -->
+
+			<!-- nav-information start -->
+			<div class="nav-information">
+				<!-- nav-email start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#"
+							class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
+
+					</div>
+				</div><!-- nav-email end -->
+
+
+				<!-- nav-phone start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">437 230
+							2861</a><br>
+
+					</div>
+				</div><!-- nav-phone end -->
+			</div><!-- nav-information end -->
+
+
+		</div><!-- pos-rel end -->
+	</nav><!-- navigation end -->
+
+	<!-- main start -->
+	<main class="js-animsition-overlay" data-animsition-overlay="true">
+		<!-- pos-rel start -->
+		<section id="up" class="pos-rel bg-img-cover"
+			style="background-image:url(assets/images/projects/bike/cover.png)">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<div class="padding-top-bottom-120 width-100perc after-preloader-anim">
+					<!-- title start -->
+					<h2 class="headline-xxxxl text-center hidden-box">
+						<span class="anim-slide">E-cycle</span>
+					</h2><!-- title end -->
+
+					<!-- description start -->
+					<div class="flex-container description">
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal">UX Design</span>
+							</span>
+						</div>
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal tr-delay-02"></span>
+							</span>
+						</div>
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal tr-delay-04">Toronto 2020</span>
+							</span>
+						</div>
+					</div><!-- description end -->
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- pos-rel end -->
+
+		<!-- pos-rel start -->
+		<div id="down" class="pos-rel section-bg-dark-1">
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- flex-container start -->
+				<div class="container flex-container padding-top-60 padding-bottom-120">
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-60">
+						<!-- list start -->
+						<ul class="list js-scrollanim">
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-01">User Interface Design</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-02">User Experience Design</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">Branding</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">3D mockups</div>
+							</li>
+						</ul><!-- list end -->
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="eight-columns column-100-100 padding-top-60">
+						<div class="column-l-margin-40-999">
+							<p class="body-text-m anim-text-reveal js-scrollanim">Congestion and parking is one of the
+								most prevalent transport challenges in large cities. Adopting bicycle rentals is one of
+								the answers to this growing problem, escaping heavy traffic and also embracing a
+								healthier lifestyle.
+								E- Cycle is a Canadian company of e-bike sharing, with a network of stations across the
+								country, where users can rent, pick up and drop off the electric bikes. The company is
+								expanding their business to the digital world , through an app that would help its users
+								with the processes regarding renting the e-bikes. The goal of this project was to
+								explore and go through the UX/UI design process from the research to the final visual
+								design.
+							</p>
+						</div>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+			</div><!-- pos-rel end -->
+		</div><!-- pos-rel end -->
+
+
+
+
+
+
+
+		<section class="pos-rel section-bg-light-1 " data-midnight="black">
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- flex-container start -->
+				<div class="container flex-container padding-top-50 padding-bottom-50">
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-20">
+						<div class="column-l-r-margin-10-999">
+							<h2 class="headline-xxs text-color-black js-scrollanim">
+								<span class="hidden-box d-block">
+									<!-- before 3 photos -->
+									<span class="anim-slide"></span>
+								</span>
+								<span class="hidden-box d-block">
+									<span class="anim-slide tr-delay-01"></span>
+								</span>
+							</h2>
+						</div>
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="eight-columns column-100-100 padding-top-20">
+						<div class="column-l-r-margin-10-999">
+							<p class="body-text-s text-color-black anim-text-reveal js-scrollanim"></p>
+						</div>
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-60">
+						<a href="assets/images/projects/bike/overview1.png"
+							class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/overview1.png" alt="project image">
+						</a>
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-60">
+						<a href="assets/images/projects/bike/overview2.png"
+							class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/overview2.png" alt="project image">
+						</a>
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-60">
+						<a href="assets/images/projects/bike/overview3.png"
+							class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/overview3.png" alt="project image">
+						</a>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+			</div><!-- pos-rel end -->
+		</section><!-- pos-rel end -->
+
+
+
+
+
+
+
+
+
+
+		<!-- pos-rel start -->
+		<section class="pos-rel section-bg-light-1" data-midnight="black">
+			<!-- pos-rel start -->
+			<div class="pos-rel container70">
+
+
+				<!-- container start -->
+				<div class="container small">
+
+
+
+
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">Competitive analysis</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/competitive_analysis.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/competitive_analysis.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">Persona</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/user_persona.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/user_persona.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">Storyboard</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/storyboard.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/storyboard.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">User flow</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/user_flow.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/user_flow.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+
+
+
+
+
+
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">Wireframing</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/wireframing.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/wireframing.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+					<!-- start FOTO COM NOME -->
+					<div class="padding-top-60">
+						<!-- flex-container start NOME FOTO-->
+						<div>
+							<!-- column start -->
+							<div class="four-columns column-100-100 padding-top-bottom-20 ">
+								<div>
+									<h2 class="headline-xxs text-color-black js-scrollanim">
+										<span class="hidden-box d-block">
+											<span class="anim-slide">Typography and color</span>
+										</span>
+
+									</h2>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end NOME FOTO-->
+						<a href="assets/images/projects/bike/typography_color.jpg"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/typography_color.jpg" alt="project image">
+						</a>
+					</div> <!-- end FOTO COM NOME -->
+
+
+				</div><!-- container end -->
+			</div><!-- pos-rel end -->
+		</section><!-- pos-rel end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- pos-rel start -->
+		<section class="pos-rel section-bg-light-1" data-midnight="black">
+			<!-- pos-rel start -->
+			<div class="pos-rel padding-top-100 padding-bottom-120 container70">
+
+				<!-- flex-container start NOME FOTO-->
+				<div>
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-bottom-20 ">
+						<div>
+							<h2 class="headline-xxs text-color-black js-scrollanim">
+								<span class="hidden-box d-block">
+									<span class="anim-slide">Final design</span>
+								</span>
+
+							</h2>
+						</div>
+					</div><!-- column end -->
+				</div><!-- flex-container end NOME FOTO-->
+
+
+
+
+				<div class="container small">
+					<div class="padding-top-60">
+						<a href="assets/images/projects/bike/bike_final_1.png"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/bike_final_1.png" alt="project image">
+						</a>
+					</div>
+					<div class="padding-top-60">
+						<a href="assets/images/projects/bike/bike_final_2.png"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/bike_final_2.png"
+								alt="project image">
+						</a>
+					</div>
+					<div class="padding-top-60">
+						<a href="assets/images/projects/bike/bike_final_3.png"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/bike_final_3.png"
+								alt="project image">
+						</a>
+					</div>
+					<div class="padding-top-60">
+						<a href="assets/images/projects/bike/bike_final_4.png"
+							class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/bike/bike_final_4.png" alt="project image">
+						</a>
+					</div>
+				</div><!-- container end -->
+			</div><!-- pos-rel end -->
+		</section><!-- pos-rel end -->
+
+	
+		<!-- pos-rel start -->
+		<div class="pos-rel">
+			<img src="assets/images/projects/bike/logo_2400x1600.jpg" alt="project image">
+		</div><!-- pos-rel end -->
+
+		<!-- pos-rel start -->
+
+
+		<!-- next project start -->
+		<section class="pos-rel bg-img-cover"
+			style="background-image:url(assets/images/projects/hayanne_goston/flower_2400x1600.png)">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<div class="padding-top-bottom-120 width-100perc text-center">
+					<div class="js-scrollanim">
+						<span class="subhead-s anim-fade">Next Project:</span>
+
+						<!-- title start -->
+						<div class="margin-top-10 margin-bottom-30">
+							<a href="project_hayanne_goston.html"
+								class="d-block hidden-box js-pointer-large js-animsition-link">
+								<h2 class="headline-xxxxl anim-slide">Hayanne Goston</h2>
+							</a>
+						</div><!-- title end -->
+
+						<!-- button start -->
+						<a href="project_hayanne_goston.html"
+							class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+							<span class="skew-btn__box">
+								<span class="skew-btn__content">See the case</span>
+								<span class="skew-btn__arrow"></span>
+							</span>
+						</a><!-- button end -->
+					</div>
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- next project end -->
+	</main><!-- main end -->
+
+	
+	<!-- footer start -->
+	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
+		style="background-image:url(assets/images/backgrounds/A_footer_full.jpg)">
+		<!-- bg-overlay -->
+		<div class="bg-overlay-black"></div>
+		<!-- pos-rel start -->
+		<div class="pos-rel flex-min-height-100vh">
+			<!-- container start -->
+			<div class="container padding-top-bottom-120">
+				<!-- footer-logo start -->
+				<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+					<img class="footer-logo__img" src="assets/images/logo/logo-white-vertical.png" alt="logo">
+				</div><!-- footer-logo end -->
+
+				<!-- flex-container start -->
+				<div class="flex-container flex-align-center">
+					<!-- column start -->
+					<div class="eight-columns">
+						<h4 class="column-l-r-margin-10 headline-l footer-title">
+							Ana <br><span class="text-color-red">Althoff</span>
+						</h4>
+					</div><!-- column end -->
+					<!-- column start -->
+					<div class="four-columns footer-nav-mobile-padding">
+						<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+							<li>
+								<a href="index.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+							</li>
+							<li>
+								<a href="pages_about.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+							</li>
+							<li>
+								<a href="all_projects.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
+							</li>
+							<li>
+								<a href="contact.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+							</li>
+						</ul>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+
+
+
+				<!-- footer-social start -->
+				<ul class="footer-social-desktop-hidden list list_center padding-top-90">
+					<li class="list__item">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small"
+							data-text="Linkedin">Linkedin</a>
+					</li>
+					<li class="list__item">
+						<a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small"
+							data-text="Instagram">Instagram</a>
+					</li>
+				</ul><!-- footer-social end -->
+
+
+			</div><!-- container end -->
+		</div><!-- pos-rel end -->
+	</footer><!-- footer end -->
+
+	<!-- scripts -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/footer-reveal.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/footer-reveal_init.js"></script>
+</body>
+
+</html>
