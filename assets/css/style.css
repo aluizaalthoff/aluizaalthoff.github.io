@@ -1063,6 +1063,11 @@ pre code {
 	max-width: 100%;
 }
 
+.container-video {
+	max-width: 100%;
+	width: 100%;
+}
+
 .container.small {
 	max-width: 100%
 }
@@ -12466,4 +12471,8 @@ body .text-color-red {
 
 .square {
 	list-style-type: square;
+}
+
+.underline {
+	text-decoration: underline;
 }
