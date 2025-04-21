@@ -7728,35 +7728,35 @@ h6 {
 .body-text-xl {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 21px;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.9;
 }
 
 .body-text-l {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 19px;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.9;
 }
 
 .body-text-m {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
-	font-weight: 200;
-	line-height: 1.9;
+	font-weight: 400;
+	line-height: 2.2;
 }
 
 .body-text-s {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.9;
 }
 
 .body-text-xs {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 1.9;
 }
 
