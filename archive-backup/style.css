@@ -1054,7 +1054,7 @@ pre code {
 
 .container {
 	width: calc(100% - 80px);
-	max-width: 80%;
+	max-width: 70%;
 	margin-left:  auto;
 	margin-right: auto;
 }
@@ -5044,8 +5044,8 @@ button.mfp-close {
 	position: absolute;
 	left: 1px;
 	top: 50%;
-	border-left:   2px solid #AB5D49;
-	border-bottom: 2px solid #AB5D49;
+	border-left:   2px solid #fff;
+	border-bottom: 2px solid #fff;
 	-webkit-transform: translateY(-50%) translateX(24px) rotate(45deg);
 	    -ms-transform: translateY(-50%) translateX(24px) rotate(45deg);
 	        transform: translateY(-50%) translateX(24px) rotate(45deg);
@@ -5075,8 +5075,8 @@ button.mfp-close {
 	left: auto;
 	top: 50%;
 	right: 1px;
-	border-top:   2px solid #AB5D49;
-	border-right: 2px solid #AB5D49;
+	border-top:   2px solid #fff;
+	border-right: 2px solid #fff;
 	-webkit-transform: translateY(-50%) translateX(-24px) rotate(45deg);
 	    -ms-transform: translateY(-50%) translateX(-24px) rotate(45deg);
 	        transform: translateY(-50%) translateX(-24px) rotate(45deg);
@@ -12480,7 +12480,7 @@ body .text-color-red {
 /* Carousel */
 .carousel {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   width: 100%;
   max-width: 100%;
 }
@@ -12514,20 +12514,26 @@ body .text-color-red {
   background: none;
 }
 
-
-.carousel-arrow:hover {
-  transform: translateY(-50%) scale(1.1);
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.carousel-arrow.mfp-arrow-left {
-  left: -60px; /* pull arrow 60px outside the image container */
+.carousel-arrow.left {
+  left: 10px;
 }
 
-.carousel-arrow.mfp-arrow-right {
-  right: -60px;
+.carousel-arrow.right {
+  right: 10px;
 }
-
-
 
 .carousel-dots {
   text-align: center;
@@ -12545,9 +12551,5 @@ body .text-color-red {
 }
 
 .carousel-dots .dot.active {
-  background-color: #AB5D49;
+  background-color: #fff;
 }
-
-
-
-
