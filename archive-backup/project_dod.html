@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ana Althoff">
+	<meta name="description" content="Ana Althoff portfolio">
+	<meta name="keywords" content="design, designer, creative, modern, clean, html5, css3, portfolio, minimal">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+	<title>Ana Althoff</title>
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- styles -->
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="preloader cursor-anim-enable dark-nav">
+	<!-- preloader-loading start -->
+	<div class="preloader__logoload-box">
+		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+		<div class="preloader__pulse"></div>
+	</div><!-- preloader-loading end -->
+
+	<!-- pointer start -->
+	<div class="pointer js-pointer" id="js-pointer">
+		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+		<i class="pointer__inner fas fa-search"></i>
+		<i class="pointer__inner fas fa-link"></i>
+	</div><!-- pointer end -->
+
+	<!-- to top btn start -->
+	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- to top btn end -->
+
+	<!-- scroll down btn start -->
+	<a href="#down"
+		class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+		<span class="scroll-to-btn__box">
+			<span class="scroll-to-btn__arrow"></span>
+		</span>
+	</a><!-- scroll down btn end -->
+
+	<!-- header start -->
+	<header class="fixed-header">
+		<!-- logo start -->
+		<div class="header-logo vertical js-midnight-color js-headroom">
+			<div class="hidden-box">
+				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+				</a>
+			</div>
+		</div><!-- logo end -->
+
+		<!-- menu-icon start -->
+		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+			<div class="menu-icon__box">
+				<span class="menu-icon__inner"></span>
+				<span class="menu-icon__close"></span>
+			</div>
+		</div><!-- menu-icon end -->
+
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_center list_margin-20px hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</li>
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="https://www.instagram.com/ana.althoff.design/"
+							class="anim-slide tr-delay-04 js-pointer-small">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</div><!-- header-social end -->
+	</header><!-- header end -->
+
+	<!-- NAVIGATION start -->
+	<nav class="nav-container pos-rel js-dropdown-active-box">
+		<!-- pos-rel start -->
+		<div class="pos-rel height-100perc">
+			<!-- dropdown close btn start -->
+			<div class="dropdown-close">
+				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+					<span class="dropdown-close__arrow"></span>
+				</div>
+			</div><!-- dropdown close btn end -->
+
+
+			<!-- menu-box start -->
+			<ul class="menu-box">
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box">
+					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Home">Home</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="About">About</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+
+				<li class="nav-btn-box js-dropdown-open">
+					<a href="work.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Work">Work</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+
+				<!-- nav-btn-box start -->
+				<li class="nav-btn-box js-dropdown-slider-open">
+					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+						<span class="nav-btn__inner" data-text="Contact">Contact</span>
+					</a>
+				</li><!-- nav-btn-box end -->
+
+			</ul><!-- menu-box end -->
+
+			<!-- nav-information start -->
+			<div class="nav-information">
+				<!-- nav-email start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#"
+							class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
+
+					</div>
+				</div><!-- nav-email end -->
+
+
+				<!-- nav-phone start -->
+				<div>
+					<div class="hidden-box d-inline-block">
+						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
+					</div>
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">437 230
+							2861</a><br>
+
+					</div>
+				</div><!-- nav-phone end -->
+			</div><!-- nav-information end -->
+
+
+		</div><!-- pos-rel end -->
+	</nav><!-- navigation end -->
+
+	<!-- main start -->
+	<main class="js-animsition-overlay" data-animsition-overlay="true">
+		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<!-- COVER AND DESCRIPTION-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+		
+
+
+		<!-- COVER -->
+		<section id="up" class="pos-rel bg-img-cover"
+		style="background-image:url(assets/images/projects/dod/dod-cover.webp)">
+		<!-- bg-overlay -->
+			<div class="bg-overlay-black">
+
+			</div>
+			<div class="pos-rel flex-min-height-100vh">
+				<div class="padding-top-bottom-120 width-100perc after-preloader-anim">
+					<!-- title start -->
+					<h2 class="headline-xxxxl text-center hidden-box">
+						<span class="anim-slide">
+							Día de los Muertos
+						</span>
+					</h2>
+					<!-- title end -->
+					<!-- description start -->
+					<div class="flex-container description">
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal">
+									Branding
+								</span>
+							</span>
+						</div>
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal tr-delay-02">
+
+								</span>
+							</span>
+						</div>
+						<div class="four-columns column-50-100 padding-top-1 text-center">
+							<span class="hidden-box d-inline-block">
+								<span class="subhead-xxs anim-reveal tr-delay-04">
+									Toronto 2024
+								</span>
+							</span>
+						</div>
+					</div>
+					<!-- description end -->
+				</div>
+			</div>
+		</section>
+
+		<div id="down" class="pos-rel section-bg-dark-1">
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- flex-container start -->
+				<div class="container flex-container padding-top-60 padding-bottom-120">
+					<!-- column start -->
+					<div class="four-columns column-100-100 padding-top-60">
+						<!-- list start -->
+						<ul class="list js-scrollanim">
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Branding
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Social Media Graphics
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Digital Ads & Banners
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Print & Digital Ads
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Event Branding
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Brochures & Flyers
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Posters & Large Format Prints
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Signage & Wayfinding
+								</div>
+							</li>
+							<li class="list__item red dot hidden-box">
+								<div class="subhead-xxs anim-slide tr-delay-03">
+									Stage  Graphics
+								</div>
+							</li>
+						</ul>
+						<!-- list end -->
+					</div>
+					<!-- column end -->
+
+					<!-- column start -->
+					<div class="eight-columns column-100-100 padding-top-60">
+						<div class="column-l-margin-40-999">
+							<p class="body-text-m anim-text-reveal js-scrollanim">
+								Día de los Muertos Kitchener was a branding project for a cultural event aimed at creating a unique and memorable visual identity by blending genuine cultural elements with a handcrafted aesthetic. The main challenge was developing a recognizable brand without relying on common visual clichés, such as skulls, in line with the client’s request. At the same time, it was important to incorporate meaningful symbols of Mexican culture. Additionally, the client requested the integration of key aspects of their existing brand identity to ensure consistency across all visual communications.
+							</p>
+						</div>
+					</div>
+					<!-- column end -->
+				</div>
+				<!-- flex-container end -->
+			</div>
+		</div>
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<!-- IMAGES START-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+		<section class="pos-rel section-bg-light-1" data-midnight="black">
+			<div class="pos-rel  container70">	
+				<div class="container small">
+
+		<!-- MOODBOARD -->
+					<!-- individual title + images starts -->
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											Moodboard
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											During my research, several key elements stood out, including the use of vivid colors against dark backgrounds, the Mexican street sign aesthetic, a hand-drawn and organic feel, the presence of important cultural motifs such as butterflies and the sacred heart, and the symmetrical and repeating designs commonly seen in folk art.
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-moodboard.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-moodboard.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+
+
+
+		<!-- COLOR -->
+					<!-- individual title + images starts -->
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											Color Palette
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											Following the concept of dark backgrounds with bright colors, I integrated the client’s yellow, green, blue, and orange tones to stay on-brand, and added red and pink to enhance vibrancy and create a more balanced palette.
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-color.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-color.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+
+
+
+		<!-- TYPOGRAPHY -->
+					<!-- individual title + images starts -->
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											Typography
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											The chosen typography blends a hand-drawn logo inspired by the "Marones" font — which evokes the look of traditional Mexican signage — for a crafted aesthetic, "Ok Noted" to enhance the handmade feel for the highlights, and "Archivo" — one of the client’s branding font — that ensures consistency and clear readability in the body copy.
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-typography.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-typography.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+
+
+
+		<!-- LOGO -->
+		<!-- individual title + images starts --> 
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											Logo
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											The design draws inspiration from the monarch butterfly’s wing pattern, where each section fits together like a jigsaw puzzle. At its core is the butterfly itself, used as the central visual element. Subtly woven into the design is the sacred heart - a timeless symbol of Mexican culture. The mix of these handcrafted elements creates an authentic aesthetic, capturing the spirit of the event.
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-logo-1.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-logo-1.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-logo-2.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-logo-2.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+
+
+
+		<!-- APPLICATIONS -->
+					<!-- individual title + images starts -->
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											Applications
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-application-poster-sticker.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-application-poster-sticker.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-application-digital.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-application-digital.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-application-trifold-poster.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-application-trifold-poster.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-application-posters.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-application-posters.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-application-square-poster-postcard.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-application-square-poster-postcard.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+<div></div>
+
+
+		<!-- THE EVENT -->
+					<!-- individual title + images starts --> 
+					<div class="padding-top-60">
+						<!-- text start -->
+						<div class="four-columns column-100-100 padding-top-bottom-20">
+								<h2 class="headline-xxs text-color-black js-scrollanim">
+									<span class="hidden-box d-block">
+										<span class="anim-slide">
+											The event
+										</span>
+										<p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+											Here’s a peek at how the visual identity came to life — from signage to atmosphere — capturing the energy, color, and spirit of the experience.
+										</p>
+									</span>
+
+								</h2>
+						</div>
+						<!-- text ends -->
+						<a href="assets/images/projects/dod/dod-photo-1.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img src="assets/images/projects/dod/dod-photo-1.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-photo-2.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-photo-2.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-photo-3.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-photo-3.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-photo-4.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-photo-4.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-photo-5.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-photo-5.webp" alt="project image">
+						</a>
+						<a href="assets/images/projects/dod/dod-photo-6.webp"
+						class="d-block js-pointer-zoom js-photo-popup">
+							<img class="padding-top-60" src="assets/images/projects/dod/dod-photo-6.webp" alt="project image">
+						</a>
+					</div> 
+					<!-- individual title + images ends -->
+
+
+
+		
+
+
+		
+
+
+
+		
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+		
+					
+
+				</div>
+			</div>
+		</section>
+
+
+	
+
+		<!-- next project start -->
+		<section class="pos-rel bg-img-cover" style="background-image:url(assets/images/projects/isabela_capeto/isabela_cover_2400x1600.jpg)">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<div class="padding-top-bottom-120 width-100perc text-center">
+					<div class="js-scrollanim">
+						<span class="subhead-s anim-fade">Next Project:</span> 
+
+						<!-- title start -->
+						<div class="margin-top-10 margin-bottom-30">
+							<a href="project_isabela_capeto.html"
+								class="d-block hidden-box js-pointer-large js-animsition-link">
+								<h2 class="headline-xxxxl anim-slide">Isabela Capeto + Stella Artois</h2>
+							</a>
+						</div><!-- title end -->
+
+						<!-- button start -->
+						<a href="project_isabela_capeto.html"
+							class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+							<span class="skew-btn__box">
+								<span class="skew-btn__content">See the case</span>
+								<span class="skew-btn__arrow"></span>
+							</span>
+						</a><!-- button end -->
+					</div>
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- next project end -->
+	
+	</main><!-- main end -->
+
+	<!-- footer start -->
+	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
+		style="background-image:url(assets/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)">
+		<!-- bg-overlay -->
+		<div class="bg-overlay-black"></div>
+		<!-- pos-rel start -->
+		<div class="pos-rel flex-min-height-100vh">
+			<!-- container start -->
+			<div class="container padding-top-bottom-120">
+				<!-- footer-logo start -->
+				<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+					<img class="footer-logo__img" src="assets/images/logo/logo-A-cream.png" alt="logo">
+				</div><!-- footer-logo end -->
+
+				<!-- flex-container start -->
+				<div class="flex-container flex-align-center">
+					<!-- column start -->
+					<div class="eight-columns">
+						<h4 class="column-l-r-margin-10 headline-l footer-title">
+							Ana <br><span class="text-color-red">Althoff</span>
+						</h4>
+					</div><!-- column end -->
+					<!-- column start -->
+					<div class="four-columns footer-nav-mobile-padding">
+						<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+							<li>
+								<a href="index.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+							</li>
+							<li>
+								<a href="pages_about.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+							</li>
+							<li>
+								<a href="work.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
+							</li>
+							<li>
+								<a href="contact.html"
+									class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+							</li>
+						</ul>
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+
+
+
+				<!-- footer-social start -->
+				<ul class="footer-social-desktop-hidden list list_center padding-top-90">
+					<li class="list__item">
+						<a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small"
+							data-text="Linkedin">Linkedin</a>
+					</li>
+					<li class="list__item">
+						<a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small"
+							data-text="Instagram">Instagram</a>
+					</li>
+				</ul><!-- footer-social end -->
+
+
+			</div><!-- container end -->
+		</div><!-- pos-rel end -->
+	</footer><!-- footer end -->
+
+	<!-- scripts -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/footer-reveal.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/footer-reveal_init.js"></script>
+</body>
+
+</html>

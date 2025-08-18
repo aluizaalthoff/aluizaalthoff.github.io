@@ -1,631 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Ana Althoff">
-	<meta name="description" content="Ana Althoff portfolio">
-	<meta name="keywords" content="design, designer, creative, modern, clean, html5, css3, portfolio, minimal">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ana Althoff">
+    <meta name="description" content="Ana Althoff portfolio">
+    <meta name="keywords" content="design, designer, creative, modern, clean, html5, css3, portfolio, minimal">
 
-	<!-- favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
 
-	<title>Ana Althoff</title>
+    <title>Ana Althoff</title>
 
-	<!-- fonts -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-	<!-- styles -->
-	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- styles -->
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="preloader cursor-anim-enable dark-nav">
-	<!-- preloader-loading start -->
-	<div class="preloader__logoload-box">
-		<img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
-		<div class="preloader__pulse"></div>
-	</div>
-	<!-- preloader-loading end -->
 
-	<!-- pointer start -->
-	<div class="pointer js-pointer" id="js-pointer">
-		<i class="pointer__inner fas fa-long-arrow-alt-right"></i>
-		<i class="pointer__inner fas fa-search"></i>
-		<i class="pointer__inner fas fa-link"></i>
-	</div>
-	<!-- pointer end -->
+    <!-- preloader-loading start -->
+    <div class="preloader__logoload-box">
+        <img class="preloader__logo vertical" src="assets/images/logo/logo-A-cream.png" alt="logo">
+        <div class="preloader__pulse">
+        </div>
+    </div>
+    <!-- preloader-loading end -->
 
-	<!-- to top btn start -->
-	<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
-		<span class="scroll-to-btn__box">
-			<span class="scroll-to-btn__arrow"></span>
-		</span>
-	</a>
-	<!-- to top btn end -->
+    <!-- pointer start -->
+    <div class="pointer js-pointer" id="js-pointer">
+        <i class="pointer__inner fas fa-long-arrow-alt-right"></i>
+        <i class="pointer__inner fas fa-search"></i>
+        <i class="pointer__inner fas fa-link"></i>
+    </div>
+    <!-- pointer end -->
 
-	<!-- scroll down btn start -->
-	<a href="#down" class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
-		<span class="scroll-to-btn__box">
-			<span class="scroll-to-btn__arrow"></span>
-		</span>
-	</a>
-	<!-- scroll down btn end -->
+    <!-- to top btn start -->
+    <a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+        <span class="scroll-to-btn__box">
+            <span class="scroll-to-btn__arrow">
+            </span>
+        </span>
+    </a>
+    <!-- to top btn end -->
 
-	<!-- header start -->
-	<header class="fixed-header">
-		<!-- logo start -->
-		<div class="header-logo vertical js-midnight-color js-headroom">
-			<div class="hidden-box">
-				<a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
-					<img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
-					<img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
-				</a>
-			</div>
-		</div>
-		<!-- logo end -->
+    <!-- scroll down btn start -->
+    <a href="#down"
+        class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+        <span class="scroll-to-btn__box">
+            <span class="scroll-to-btn__arrow">
+            </span>
+        </span>
+    </a>
+    <!-- scroll down btn end -->
 
-		<!-- menu-icon start -->
-		<div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
-			<div class="menu-icon__box">
-				<span class="menu-icon__inner"></span>
-				<span class="menu-icon__close"></span>
-			</div>
-		</div>
-		<!-- menu-icon end -->
+    <!-- header start -->
+    <header class="fixed-header">
 
-		<!-- header-social start -->
-		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
-			<ul class="list list_center list_margin-20px hidden-box">
-				<li class="list__item">
-					<div class="hidden-box d-inline-block">
-						<a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</div>
-				</li>
-				<li class="list__item">
-					<div class="hidden-box d-inline-block">
-						<a href="https://www.instagram.com/ana.althoff.design/" class="anim-slide tr-delay-04 js-pointer-small">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!-- header-social end -->
-	</header>
-	<!-- header end -->
+        <!-- logo start -->
+        <div class="header-logo vertical js-midnight-color js-headroom">
+            <div class="hidden-box">
+                <a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
+                    <img class="header-logo__img white" src="assets/images/logo/logo-A-cream.png" alt="logo">
+                    <img class="header-logo__img black" src="assets/images/logo/logo-A-grey.png" alt="logo">
+                </a>
+            </div>
+        </div><!-- logo end -->
 
-	<!-- NAVIGATION start -->
-	<nav class="nav-container pos-rel js-dropdown-active-box">
-		<div class="pos-rel height-100perc">
-			<!-- dropdown close btn start -->
-			<div class="dropdown-close">
-				<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
-					<span class="dropdown-close__arrow"></span>
-				</div>
-			</div>
-			<!-- dropdown close btn end -->
+        <!-- menu-icon start -->
+        <div class="menu-icon vertical js-menu-open-close js-pointer-large js-midnight-color js-headroom">
+            <div class="menu-icon__box">
+                <span class="menu-icon__inner"></span>
+                <span class="menu-icon__close"></span>
+            </div>
+        </div>
+        <!-- menu-icon end -->
 
-			<!-- menu-box start -->
-			<ul class="menu-box">
-				<!-- nav-btn-box start -->
-				<li class="nav-btn-box">
-					<a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
-						<span class="nav-btn__inner" data-text="Home">Home</span>
-					</a>
-				</li>
-				<!-- nav-btn-box end -->
+        <!-- header-social start -->
+        <div class="header-social after-preloader-anim js-midnight-color js-headroom">
+            <ul class="list list_center list_margin-20px hidden-box">
+                <li class="list__item">
+                    <div class="hidden-box d-inline-block">
+                        <a href="https://www.linkedin.com/in/anaalthoff/" class="anim-slide js-pointer-small">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="hidden-box d-inline-block">
+                        <a href="https://www.instagram.com/ana.althoff.design/"
+                            class="anim-slide tr-delay-04 js-pointer-small">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </li>
 
-				<!-- nav-btn-box start -->
-				<li class="nav-btn-box js-dropdown-open">
-					<a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
-						<span class="nav-btn__inner" data-text="About">About</span>
-					</a>
-				</li>
-				<!-- nav-btn-box end -->
+            </ul>
+        </div>
+        <!-- header-social end -->
+    </header>
+    <!-- header end -->
 
-				<!-- nav-btn-box start -->
-				<li class="nav-btn-box js-dropdown-open">
-					<a class="nav-btn large dropdown-hidden-btn js-pointer-large">
-						<span class="nav-btn__inner" data-text="Work">Work</span>
-					</a>
-					<!-- dropdown start -->
-					<ul class="menu-box dropdown js-dropdown">
-						<li class="nav-btn-box">
-							<a href="work.html" class="nav-btn small js-animsition-link js-pointer-large">
-								<span class="nav-btn__inner" data-text="Projects">Projects</span>
-							</a>
-						</li>
-					</ul>
-					<!-- dropdown end -->
-				</li>
-				<!-- nav-btn-box end -->
+    <!-- NAVIGATION start -->
+    <nav class="nav-container pos-rel js-dropdown-active-box">
+        <!-- pos-rel start -->
+        <div class="pos-rel height-100perc">
+            <!-- dropdown close btn start -->
+            <div class="dropdown-close">
+                <div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+                    <span class="dropdown-close__arrow"></span>
+                </div>
+            </div>
+            <!-- dropdown close btn end -->
 
-				<!-- nav-btn-box start -->
-				<li class="nav-btn-box js-dropdown-slider-open">
-					<a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
-						<span class="nav-btn__inner" data-text="Contact">Contact</span>
-					</a>
-				</li>
-				<!-- nav-btn-box end -->
-			</ul>
-			<!-- menu-box end -->
+            <!-- menu-box start -->
+            <ul class="menu-box">
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box">
+                    <a href="index.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Home">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <!-- nav-btn-box end -->
 
-			<!-- nav-information start -->
-			<div class="nav-information">
-				<!-- nav-email start -->
-				<div>
-					<div class="hidden-box d-inline-block">
-						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
-					</div>
-					<div class="nav-fade-anim js-nav-anim margin-top-10">
-						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
-							ana.althoff.design@gmail.com
-						</a><br>
-					</div>
-				</div>
-				<!-- nav-email end -->
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-dropdown-open">
+                    <a href="pages_about.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+                        <span class="nav-btn__inner" data-text="About">
+                            About
+                        </span>
+                    </a>
+                </li>
+                <!-- nav-btn-box end -->
 
-				<!-- nav-phone start -->
-				<div>
-					<div class="hidden-box d-inline-block">
-						<div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Phone</div>
-					</div>
-					<div class="nav-fade-anim js-nav-anim margin-top-10">
-						<a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
-							437 230 2861
-						</a><br>
-					</div>
-				</div>
-				<!-- nav-phone end -->
-			</div>
-			<!-- nav-information end -->
-		</div>
-	</nav>
-	<!-- NAVIGATION end -->
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-dropdown-open">
+                    <a href="work.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Work">
+                            Work
+                        </span>
+                    </a>
+                </li>
+                <!-- nav-btn-box end -->
 
-	<!-- main start -->
-	<main class="js-animsition-overlay" data-animsition-overlay="true">
-		<!-- pos-rel start -->
-		<section id="up" class="pos-rel bg-img-cover"
-			style="background-image:url('assets/images/projects/mozzafiato/cover.webp')">
-			<!-- bg-overlay -->
-			<div class="bg-overlay-black"></div>
-			<!-- pos-rel start -->
-			<div class="pos-rel flex-min-height-100vh">
-				<div class="padding-top-bottom-120 width-100perc after-preloader-anim">
-					<!-- title start -->
-					<h2 class="headline-xxxxl text-center hidden-box">
-						<span class="anim-slide">Mozzafiato</span>
-					</h2>
-					<!-- title end -->
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-dropdown-slider-open">
+                    <a href="contact.html" class="nav-btn large dropdown-hidden-btn js-pointer-large">
+                        <span class="nav-btn__inner" data-text="Contact">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+                <!-- nav-btn-box end -->
 
-					<!-- description start -->
-					<div class="flex-container description">
-						<div class="four-columns column-50-100 padding-top-1 text-center">
-							<span class="hidden-box d-inline-block">
-								<span class="subhead-xxs anim-reveal">Branding</span>
-							</span>
-						</div>
-						<div class="four-columns column-50-100 padding-top-1 text-center">
-							<span class="hidden-box d-inline-block">
-								<span class="subhead-xxs anim-reveal tr-delay-02"></span>
-							</span>
-						</div>
-						<div class="four-columns column-50-100 padding-top-1 text-center">
-							<span class="hidden-box d-inline-block">
-								<span class="subhead-xxs anim-reveal tr-delay-04">Toronto 2020</span>
-							</span>
-						</div>
-					</div>
-					<!-- description end -->
-				</div>
-			</div>
-			<!-- pos-rel end -->
-		</section>
-		<!-- pos-rel end -->
+            </ul>
+            <!-- menu-box end -->
 
-		<!-- pos-rel start -->
-		<div id="down" class="pos-rel section-bg-dark-1">
-			<div class="pos-rel flex-min-height-100vh">
-				<!-- flex-container start -->
-				<div class="container flex-container padding-top-60 padding-bottom-120">
-					<!-- column start -->
-					<div class="four-columns column-100-100 padding-top-60">
-						<!-- list start -->
-						<ul class="list js-scrollanim">
-							<li class="list__item red dot hidden-box">
-								<div class="subhead-xxs anim-slide tr-delay-03">Branding</div>
-							</li>
-							<li class="list__item red dot hidden-box">
-								<div class="subhead-xxs anim-slide tr-delay-03">3D mockups</div>
-							</li>
-						</ul>
-						<!-- list end -->
-					</div>
-					<!-- column end -->
+            <!-- nav-information start -->
+            <div class="nav-information">
+                <!-- nav-email start -->
+                <div>
+                    <div class="hidden-box d-inline-block">
+                        <div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">Email</div>
+                    </div>
+                    <div class="nav-fade-anim js-nav-anim margin-top-10">
+                        <a href="#"
+                            class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">ana.althoff.design@gmail.com</a><br>
 
-					<!-- column start -->
-					<div class="eight-columns column-100-100 padding-top-60">
-						<div class="column-l-margin-40-999">
-							<p class="body-text-m anim-text-reveal js-scrollanim">
-								In collaboration with Mansy Ralhan, we developed the concept, identity, and brand book for
-								a new coffee company, Mozzafiato, as part of a coursework project. Our goal was to create
-								a sophisticated atmosphere and embrace the experience of “being in the moment.”
-							</p>
-						</div>
-					</div>
-					<!-- column end -->
-				</div>
-				<!-- flex-container end -->
-			</div>
-		</div>
-		<!-- pos-rel end -->
+                    </div>
+                </div><!-- nav-email end -->
 
-		<!-- IMAGES START -->
-		<section class="pos-rel section-bg-light-1 " data-midnight="black">
-			<!-- pos-rel start 3 FOTOS-->
-		   <div class="pos-rel flex-min-height-100vh">
-			   <!-- flex-container start -->
-			   <div class="container flex-container padding-top-50 padding-bottom-50">
 
-	   
-				   <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-				   
-				   <div class="pos-rel">
-					   <div>
-						   <div>
-							   <!-- text start -->
-							   <div class="four-columns column-100-100">
-								   <h2 class="headline-xxs text-color-black js-scrollanim">
-									   <span class="hidden-box d-block">
-										   <span class="anim-slide">
-											   Concept
-										   </span>
-										   <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-											   Sophistication and simplicity. It might seem dualistic. It’s quiet, it’s simple.
-											   It’s the new luxury of stepping away from demanding screens. It’s almost like
-											   meditation. What I picture is a morning in a cottage in the mountains, looking
-											   out the window at the gently curving landscape. The cold green tones against the
-											   warm, earthy colors of the coffee. There is indeed duality: hot and cold,
-											   elegance and simplicity. A moment of reflection, stillness, a true pause. A deep
-											   inhale—only the smell of coffee fills the room.
-										   </p>
-									   </span>
-								   </h2>
-							   </div>
-							   <!-- text end -->
-						   </div>
-					   </div>
-				   </div>
-				   
-	   
-				  <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- nav-phone start -->
+                <div>
+                    <div class="hidden-box d-inline-block">
+                        <div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim">
+                            Phone
+                        </div>
+                    </div>
+                    <div class="nav-fade-anim js-nav-anim margin-top-10">
+                        <a href="#" class="subhead-xxs nav-text-color text-hover-to-red js-pointer-small">
+                            437 230 2861
+                        </a>
+                        <br>
+                    </div>
+                </div>
+                <!-- nav-phone end -->
+            </div>
+            <!-- nav-information end -->
+        </div>
+        <!-- pos-rel end -->
+    </nav>
+    <!-- navigation end -->
 
-	   
-				   <!-- column start -->
-				   <div class="four-columns column-100-100 padding-top-60">
-					   <a href="assets/images/projects/mozzafiato/sophisticated.webp" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-						   <img src="assets/images/projects/mozzafiato/sophisticated.webp" alt="project image">
-					   </a>
-				   </div>
-				   <!-- column end -->
-	   
-				   <!-- column start -->
-				   <div class="four-columns column-100-100 padding-top-60">
-					   <a href="assets/images/projects/mozzafiato/moment.webp" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-						   <img src="assets/images/projects/mozzafiato/moment.webp" alt="project image">
-					   </a>
-				   </div>
-				   <!-- column end -->
-	   
-				   <!-- column start -->
-				   <div class="four-columns column-100-100 padding-top-60">
-					   <a href="assets/images/projects/mozzafiato/lifestyle.webp" class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-						   <img src="assets/images/projects/mozzafiato/lifestyle.webp" alt="project image">
-					   </a>
-				   </div>
-				   <!-- column end -->
-			   </div>
-			   <!-- flex-container end -->
-		   </div>
-		   <!-- pos-rel end -->
-	   </section>
-		<!-- pos-rel end -->
+    <!-- main start -->
+    <main class="js-animsition-overlay" data-animsition-overlay="true">
 
-		<!-- pos-rel start pagina100% -->
-		<div class="pos-rel">
-			<a href="assets/images/projects/mozzafiato/moodboard.webp" class="d-block js-pointer-zoom js-photo-popup">
-				<img src="assets/images/projects/mozzafiato/moodboard.webp" alt="project image">
-			</a>
-		</div>
-		<!-- pos-rel end -->
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- COVER AND DESCRIPTION-->
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
-		<!-- pos-rel start -->
-		<section class="pos-rel section-bg-light-1" data-midnight="black">
-			<div class="pos-rel container70">
-				<!-- container start -->
-				<div class="container small">
-					
-						<!--COLOR - PHOTO AND TITLE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-						<div class="padding-top-60">
-							<div class="four-columns column-100-100 padding-top-bottom-20">
-								<h2 class="headline-xxs text-color-black js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="anim-slide">
-											Color
-										</span>
-									</span>
-								</h2>
-							</div>
-							<a href="assets/images/projects/mozzafiato/color.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/color.webp" alt="project image">
-							</a>
-						</div>
-						<!--END COLOR - PHOTO AND TITLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-						
-						<!--TYPOGRAPHY - PHOTO AND TITLE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-						<div class="padding-top-60">
-							<div class="four-columns column-100-100 padding-top-bottom-20">
-								<h2 class="headline-xxs text-color-black js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="anim-slide">
-											Typography
-										</span>
-									</span>
-								</h2>
-							</div>
-							<a href="assets/images/projects/mozzafiato/typography-1.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/typography-1.webp" alt="project image">
-							</a>
-							<a href="assets/images/projects/mozzafiato/typography-2.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/typography-2.webp" alt="project image">
-							</a>
-						</div>
-						<!--END TYPOGRAPHY - PHOTO AND TITLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- COVER -->
+        <section id="up" class="pos-rel bg-img-cover"
+            style="background-image:url(assets/images/projects/mozzafiato/cover.webp)">
+            <!-- bg-overlay -->
+            <div class="bg-overlay-black">
 
-						<!--LOGO - PHOTO AND TITLE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-						<div class="padding-top-60">
-							<div class="four-columns column-100-100 padding-top-bottom-20">
-								<h2 class="headline-xxs text-color-black js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="anim-slide">
-											Logo
-										</span>
-									</span>
-								</h2>
-							</div>
-							<a href="assets/images/projects/mozzafiato/logo.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/logo.webp" alt="project image">
-							</a>
-						</div>
-						<!--END LOGO - PHOTO AND TITLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            </div>
+            <div class="pos-rel flex-min-height-100vh">
+                <div class="padding-top-bottom-120 width-100perc after-preloader-anim">
+                    <!-- title start -->
+                    <h2 class="headline-xxxxl text-center hidden-box">
+                        <span class="anim-slide">
+                            Mozzafiato
+                        </span>
+                    </h2>
+                    <!-- title end -->
+                    <!-- description start -->
+                    <div class="flex-container description">
+                        <div class="four-columns column-50-100 padding-top-1 text-center">
+                            <span class="hidden-box d-inline-block">
+                                <span class="subhead-xxs anim-reveal">
+                                    Branding
+                                </span>
+                            </span>
+                        </div>
+                        <div class="four-columns column-50-100 padding-top-1 text-center">
+                            <span class="hidden-box d-inline-block">
+                                <span class="subhead-xxs anim-reveal tr-delay-02">
 
-						<!--BRAND GUIDE - PHOTO AND TITLE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-						<div class="padding-top-60">
-							<div class="four-columns column-100-100 padding-top-bottom-20">
-								<h2 class="headline-xxs text-color-black js-scrollanim">
-									<span class="hidden-box d-block">
-										<span class="anim-slide">
-											Brand guide
-										</span>
-									</span>
-								</h2>
-							</div>
-							<a href="assets/images/projects/mozzafiato/book-cover.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/book-cover.webp" alt="project image">
-							</a>
-							<a href="assets/images/projects/mozzafiato/book-logo.webp" class="d-block js-pointer-zoom js-photo-popup">
-								<img class="padding-top-60" src="assets/images/projects/mozzafiato/book-logo.webp" alt="project image">
-							</a>
-						</div>
-						<!--END BRAND GUIDE - PHOTO AND TITLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                                </span>
+                            </span>
+                        </div>
+                        <div class="four-columns column-50-100 padding-top-1 text-center">
+                            <span class="hidden-box d-inline-block">
+                                <span class="subhead-xxs anim-reveal tr-delay-04">
+                                    Toronto 2020
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- description end -->
+                </div>
+            </div>
+        </section>
 
-					
-				
-					
-				</div>
-				<!-- container end -->
-			</div>
-		</section>
-		<!-- pos-rel end -->
+        <div id="down" class="pos-rel section-bg-dark-1">
+            <div class="pos-rel flex-min-height-100vh">
+                <!-- flex-container start -->
+                <div class="container flex-container padding-top-60 padding-bottom-120">
+                    <!-- column start -->
+                    <div class="four-columns column-100-100 padding-top-60">
+                        <!-- list start -->
+                        <ul class="list js-scrollanim">
+                            <li class="list__item red dot hidden-box">
+                                <div class="subhead-xxs anim-slide tr-delay-03">
+                                    Co-developed brand concept, identity, and brand book
+                                </div>
+                            </li>
+                            <li class="list__item red dot hidden-box">
+                                <div class="subhead-xxs anim-slide tr-delay-03">
+                                    Defined brand storytelling, tone, and positioning
+                                </div>
+                            </li>
+                            <li class="list__item red dot hidden-box">
+                                <div class="subhead-xxs anim-slide tr-delay-03">
+                                    Designed logo, packaging mockups, and visual guidelines
+                                </div>
+                            </li>
 
-		<!-- pos-rel start -->
-		<section class="pos-rel section-bg-light-1" data-midnight="black">
-			<div class="pos-rel padding-top-100 padding-bottom-120 container70">
-				<div>
-					<div class="four-columns column-100-100 padding-top-bottom-20">
-						<h2 class="headline-xxs text-color-black js-scrollanim">
-							<span class="hidden-box d-block">
-								<span class="anim-slide">Brand application</span>
-							</span>
-						</h2>
-					</div>
-				</div>
+                        </ul>
+                        <!-- list end -->
+                    </div>
+                    <!-- column end -->
 
-				<div class="container small">
-					<div class="padding-top-60">
-						<a href="assets/images/projects/mozzafiato/cups.webp" class="d-block js-pointer-zoom js-photo-popup">
-							<img src="assets/images/projects/mozzafiato/cups.webp" alt="project image">
-						</a>
-					</div>
-					<div class="padding-top-60">
-						<a href="assets/images/projects/mozzafiato/t-shirt.webp"
-							class="d-block js-pointer-zoom js-photo-popup">
-							<img src="assets/images/projects/mozzafiato/t-shirt.webp" alt="project image">
-						</a>
-					</div>
-					<div class="padding-top-60">
-						<a href="assets/images/projects/mozzafiato/logo_wall.webp"
-							class="d-block js-pointer-zoom js-photo-popup">
-							<img src="assets/images/projects/mozzafiato/logo_wall.webp" alt="project image">
-						</a>
-					</div>
-					<div class="padding-top-60">
-						<a href="assets/images/projects/mozzafiato/packaging.webp"
-							class="d-block js-pointer-zoom js-photo-popup">
-							<img src="assets/images/projects/mozzafiato/packaging.webp" alt="project image">
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- pos-rel end -->
+                    <!-- column start -->
+                    <div class="eight-columns column-100-100 padding-top-60">
+                        <div class="column-l-margin-40-999">
+                            <p class="body-text-m anim-text-reveal js-scrollanim">
+                                Mozzafiato is a coffee brand concept developed to capture the luxury of slowing down and
+                                being in the moment. The identity and brand book were created as part of a coursework
+                                project, blending sophistication with simplicity to evoke a calm, meditative
+                                atmosphere—crafted in collaboration with Mansy Ralhan.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- column end -->
+                </div>
+                <!-- flex-container end -->
+            </div>
+        </div>
 
-		<!-- pos-rel start -->
-		<section class="pos-rel section-bg-light-2" data-midnight="black">
-			<div class="pos-rel padding-top-60 padding-bottom-120">
-				<div class="container flex-container flex-align-end">
-					<!-- columns start -->
-					<div class="four-columns column-100-100 padding-top-60">
-						<div class="column-l-r-margin-10-999 js-scrollanim">
-							<h2 class="headline-xxs text-color-black">
-								<span class="hidden-box d-block">
-									<span class="anim-slide">Mozzafiato</span>
-								</span>
-								<span class="hidden-box d-block">
-									<span class="anim-slide tr-delay-01">It's a lifestyle</span>
-								</span>
-							</h2>
-							<p class="body-text-xs text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-								Mozzafiato is not only a coffee brand. It’s a way of living. Our goal was to reveal the
-								unique, bold character and the expertise behind the brand.
-							</p>
-						</div>
-					</div>
-					<!-- columns end -->
 
-					<!-- columns start -->
-					<div class="eight-columns column-100-100 padding-top-60">
-						<a href="assets/images/projects/mozzafiato/girl.webp"
-							class="column-l-r-margin-10-999 d-block js-pointer-zoom js-photo-popup">
-							<img src="assets/images/projects/mozzafiato/girl.webp" alt="project image">
-						</a>
-					</div>
-					<!-- columns end -->
-				</div>
-			</div>
-		</section>
-		<!-- pos-rel end -->
 
-		<!-- pos-rel start pagina100% -->
-		<div class="pos-rel">
-			<img src="assets/images/projects/mozzafiato/MOZZAFIATO_2400x1600.webp" alt="project image">
-		</div>
-		<!-- pos-rel end -->
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- IMAGES START -->
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
-		<!-- next project start -->
-		<section class="pos-rel bg-img-cover"
-			style="background-image:url('assets/images/projects/photos/cover.jpg')">
-			<!-- bg-overlay -->
-			<div class="bg-overlay-black"></div>
-			<!-- pos-rel start -->
-			<div class="pos-rel flex-min-height-100vh">
-				<div class="padding-top-bottom-120 width-100perc text-center">
-					<div class="js-scrollanim">
-						<span class="subhead-s anim-fade">Next Project:</span>
-						<!-- title start -->
-						<div class="margin-top-10 margin-bottom-30">
-							<a href="project_photos.html" class="d-block hidden-box js-pointer-large js-animsition-link">
-								<h2 class="headline-xxxxl anim-slide">Apple photos redesign</h2>
-							</a>
-						</div>
-						<!-- title end -->
-						<!-- button start -->
-						<a href="project_photos.html" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
-							<span class="skew-btn__box">
-								<span class="skew-btn__content">Explore</span>
-								<span class="skew-btn__arrow"></span>
-							</span>
-						</a>
-						<!-- button end -->
-					</div>
-				</div>
-			</div>
-			<!-- pos-rel end -->
-		</section>
-		<!-- next project end -->
-	</main>
-	<!-- main end -->
+        <section class="pos-rel section-bg-light-1" data-midnight="black">
+            <div class="pos-rel  container">
+                <div class="container small">
 
-	<!-- footer start -->
-	<footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
-		style="background-image:url('assets/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg')">
-		<!-- bg-overlay -->
-		<div class="bg-overlay-black"></div>
-		<!-- pos-rel start -->
-		<div class="pos-rel flex-min-height-100vh">
-			<!-- container start -->
-			<div class="container padding-top-bottom-120">
-				<!-- footer-logo start -->
-				<div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
-					<img class="footer-logo__img" src="assets/images/logo/logo-A-cream.png" alt="logo">
-				</div>
-				<!-- footer-logo end -->
+                    <!-- BRANDING -->
+                    <div class="padding-top-60">
+                        <!-- text start -->
+                        <div class="four-columns column-100-100 padding-top-bottom-20">
+                            <h2 class="headline-xxs text-color-black js-scrollanim">
+                                <span class="hidden-box d-block">
+                                    <span class="anim-slide">
+                                        Branding
+                                    </span>
+                                    <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
+                                        Sophistication and simplicity. Mozzafiato is the luxury of being away from
+                                        demanding screens—a meditative pause in the day. The feeling is like waking up
+                                        in a mountain cottage, looking through a window at the cool curves of the
+                                        landscape. A moment of reflection, a deep inhale—the air scented only with
+                                        coffee. This is not the hustle of a crowded café. It’s the calm of a Sunday
+                                        morning, alone with your thoughts. The sound of silence. The luxury of
+                                        simplicity.
+                                    </p>
+                                </span>
 
-				<!-- flex-container start -->
-				<div class="flex-container flex-align-center">
-					<!-- column start -->
-					<div class="eight-columns">
-						<h4 class="column-l-r-margin-10 headline-l footer-title">
-							Ana <br><span class="text-color-red">Althoff</span>
-						</h4>
-					</div>
-					<!-- column end -->
+                            </h2>
+                        </div>
+                        <!-- text ends -->
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="assets/images/projects/mozzafiato/moodboard.webp" alt="moodboard">
+                                    <p class="carousel-caption">Outside, soft green tones. Inside, the warm, earthy
+                                        colors of coffee.
+                                        It’s duality: hot and cold, elegance and minimalism, stillness and energy.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/color.webp" alt="color palette">
+                                    <p class="carousel-caption">The palette mirrors the brand’s duality: cool,
+                                        desaturated greens drawn from nature and rich, warm browns inspired by coffee.
+                                        Each tone supports the narrative—balance, depth, and familiarity—guiding the
+                                        visual language.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/typography-1.webp" alt="typography">
+                                    <p class="carousel-caption">The logo uses a handwritten font to suggest human touch,
+                                        as if scribbled in a journal, paired with a simple sans serif that reinforces
+                                        clarity, modernity, and elegance.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/logo.webp" alt="logo sketches">
+                                    <p class="carousel-caption">A minimalist coffee cup seen from above—simple lines, no
+                                        extra ornamentation—paired with the wordmark. The design conveys calm
+                                        confidence.</p>
+                                </div>
+                            </div>
 
-					<!-- column start -->
-					<div class="four-columns footer-nav-mobile-padding">
-						<ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
-							<li>
-								<a href="index.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
-							</li>
-							<li>
-								<a href="pages_about.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
-							</li>
-							<li>
-								<a href="work.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
-							</li>
-							<li>
-								<a href="contact.html" class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
-							</li>
-						</ul>
-					</div>
-					<!-- column end -->
-				</div>
-				<!-- flex-container end -->
+                            <!-- Arrows styled like popup navigation -->
+                            <button type="button"
+                                class="carousel-arrow mfp-arrow mfp-arrow-left js-pointer-large"></button>
+                            <button type="button"
+                                class="carousel-arrow mfp-arrow mfp-arrow-right js-pointer-large"></button>
 
-				<!-- footer-social start -->
-				<ul class="footer-social-desktop-hidden list list_center padding-top-90">
-					<li class="list__item">
-						<a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small" data-text="Linkedin">
-							Linkedin
-						</a>
-					</li>
-					<li class="list__item">
-						<a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small" data-text="Instagram">
-							Instagram
-						</a>
-					</li>
-				</ul>
-				<!-- footer-social end -->
-			</div>
-			<!-- container end -->
-		</div>
-		<!-- pos-rel end -->
-	</footer>
-	<!-- footer end -->
+                            <!-- Navigation dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BRANDING ENDS -->
 
-	<!-- scripts -->
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/footer-reveal.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/footer-reveal_init.js"></script>
+                    <!-- APPLICATIONS -->
+                    <div class="padding-top-60">
+                        <!-- text start -->
+                        <div class="four-columns column-100-100 padding-top-bottom-20">
+                            <h2 class="headline-xxs text-color-black js-scrollanim">
+                                <span class="hidden-box d-block">
+                                    <span class="anim-slide">
+                                        Applications
+                                    </span>
+             
+                                </span>
+
+                            </h2>
+                        </div>
+                        <!-- text ends -->
+                        <div class="carousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="assets/images/projects/mozzafiato/moodboard.webp" alt="moodboard">
+                                    <p class="carousel-caption">Outside, soft green tones. Inside, the warm, earthy
+                                        colors of coffee.
+                                        It’s duality: hot and cold, elegance and minimalism, stillness and energy.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/color.webp" alt="color palette">
+                                    <p class="carousel-caption">The palette mirrors the brand’s duality: cool,
+                                        desaturated greens drawn from nature and rich, warm browns inspired by coffee.
+                                        Each tone supports the narrative—balance, depth, and familiarity—guiding the
+                                        visual language.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/typography-1.webp" alt="typography">
+                                    <p class="carousel-caption">The logo uses a handwritten font to suggest human touch,
+                                        as if scribbled in a journal, paired with a simple sans serif that reinforces
+                                        clarity, modernity, and elegance.</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/mozzafiato/logo.webp" alt="logo sketches">
+                                    <p class="carousel-caption">A minimalist coffee cup seen from above—simple lines, no
+                                        extra ornamentation—paired with the wordmark. The design conveys calm
+                                        confidence.</p>
+                                </div>
+                            </div>
+
+                            <!-- Arrows styled like popup navigation -->
+                            <button type="button"
+                                class="carousel-arrow mfp-arrow mfp-arrow-left js-pointer-large"></button>
+                            <button type="button"
+                                class="carousel-arrow mfp-arrow mfp-arrow-right js-pointer-large"></button>
+
+                            <!-- Navigation dots -->
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- APPLICATIONS ENDS -->
+
+
+
+
+                    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+                </div>
+            </div>
+        </section>
+
+        <!-- next project start -->
+        <section class="pos-rel bg-img-cover" style="background-image:url(assets/images/projects/dod/dod-cover.webp)">
+            <!-- bg-overlay -->
+            <div class="bg-overlay-black"></div>
+            <!-- pos-rel start -->
+            <div class="pos-rel flex-min-height-100vh">
+                <div class="padding-top-bottom-120 width-100perc text-center">
+                    <div class="js-scrollanim">
+                        <span class="subhead-xxl anim-fade">Next Project:</span>
+
+                        <!-- title start -->
+                        <div class="margin-top-10 margin-bottom-30">
+                            <a href="project_dod.html" class="d-block hidden-box js-pointer-large js-animsition-link">
+                                <h2 class="headline-xxxxl anim-slide">Día de los Muertos</h2>
+                            </a>
+                        </div><!-- title end -->
+
+                        <!-- button start -->
+                        <a href="project_dod.html"
+                            class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+                            <span class="skew-btn__box">
+                                <span class="skew-btn__content">Explore</span>
+                                <span class="skew-btn__arrow"></span>
+                            </span>
+                        </a><!-- button end -->
+                    </div>
+                </div>
+            </div><!-- pos-rel end -->
+        </section><!-- next project end -->
+
+    </main><!-- main end -->
+
+    <!-- footer start -->
+    <footer class="fixed-footer pos-rel bg-img-cover js-fixed-footer"
+        style="background-image:url(assets/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)">
+        <!-- bg-overlay -->
+        <div class="bg-overlay-black"></div>
+        <!-- pos-rel start -->
+        <div class="pos-rel flex-min-height-100vh">
+            <!-- container start -->
+            <div class="container padding-top-bottom-120">
+                <!-- footer-logo start -->
+                <div class="footer-logo vertical footer-logo-desktop-hidden padding-bottom-90">
+                    <img class="footer-logo__img" src="assets/images/logo/logo-A-cream.png" alt="logo">
+                </div><!-- footer-logo end -->
+
+                <!-- flex-container start -->
+                <div class="flex-container flex-align-center">
+                    <!-- column start -->
+                    <div class="eight-columns">
+                        <h4 class="column-l-r-margin-10 headline-l footer-title">
+                            Ana <br><span class="text-color-red">Althoff</span>
+                        </h4>
+                    </div><!-- column end -->
+                    <!-- column start -->
+                    <div class="four-columns footer-nav-mobile-padding">
+                        <ul class="column-l-r-margin-10 footer-nav-list js-footer-hover-box">
+                            <li>
+                                <a href="index.html"
+                                    class="footer-nav__btn js-pointer-small js-footer-hover-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="pages_about.html"
+                                    class="footer-nav__btn js-pointer-small js-footer-hover-link">About</a>
+                            </li>
+                            <li>
+                                <a href="work.html"
+                                    class="footer-nav__btn js-pointer-small js-footer-hover-link">Work</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="footer-nav__btn js-pointer-small js-footer-hover-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- column end -->
+                </div><!-- flex-container end -->
+
+
+
+                <!-- footer-social start -->
+                <ul class="footer-social-desktop-hidden list list_center padding-top-90">
+                    <li class="list__item">
+                        <a href="https://www.linkedin.com/in/anaalthoff/" class="flip-btn js-pointer-small"
+                            data-text="Linkedin">Linkedin</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="https://www.instagram.com/ana.althoff.design/" class="flip-btn js-pointer-small"
+                            data-text="Instagram">Instagram</a>
+                    </li>
+                </ul><!-- footer-social end -->
+
+
+            </div><!-- container end -->
+        </div><!-- pos-rel end -->
+    </footer><!-- footer end -->
+
+    <!-- scripts -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/footer-reveal.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/footer-reveal_init.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
+
 </html>
