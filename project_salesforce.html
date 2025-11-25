@@ -24,6 +24,181 @@
     <!-- styles -->
     <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        .access-modal-overlay {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: rgba(17, 21, 23, 0.85);
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            z-index: 99999 !important;
+            font-family: 'Montserrat', sans-serif;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -webkit-overflow-scrolling: touch;
+        }
+        .pointer {
+            z-index: 999999 !important;
+        }
+        .access-modal-content {
+            background: #f4f0ea;
+            padding: 50px 40px;
+            border-radius: 8px;
+            max-width: 550px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            text-align: center;
+            color: #111517;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            position: relative;
+        }
+        .access-modal-content h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #111517;
+            font-weight: 600;
+        }
+        .access-modal-content p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #111517;
+        }
+        .access-modal-content a {
+            color: #ab5c48;
+            text-decoration: none;
+            border-bottom: 1px solid #ab5c48;
+            transition: all 0.3s ease;
+        }
+        .access-modal-content a:hover {
+            color: #8a4a38;
+            border-bottom-color: #8a4a38;
+        }
+        .access-modal-content input {
+            width: 100%;
+            padding: 14px;
+            margin: 25px 0 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            color: #111517;
+            font-size: 15px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+        .access-modal-content input:focus {
+            outline: none;
+            border-color: #ab5c48;
+        }
+        .access-modal-content input::placeholder {
+            color: #999;
+        }
+        .access-modal-content button {
+            padding: 14px 35px;
+            background: #ab5c48;
+            color: #f4f0ea;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        .access-modal-content button:hover {
+            background: #8a4a38;
+        }
+        .access-modal-content .cancel-btn {
+            background: #ddd;
+            color: #111517;
+        }
+        .access-modal-content .cancel-btn:hover {
+            background: #bbb;
+        }
+        .error-message {
+            color: #ab5c48;
+            font-size: 13px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+    <script>
+        (function () {
+            var ACCESS_CODE = 'Salesforce2025!';
+            var STORAGE_KEY = 'projectSalesforceAuthorized';
+
+            function revealPage() {
+                var overlay = document.getElementById('accessModalOverlay');
+                if (overlay) {
+                    overlay.style.display = 'none';
+                    overlay.remove();
+                }
+            }
+
+            if (sessionStorage.getItem(STORAGE_KEY) === 'true') {
+                // Already authorized - page is visible
+                return;
+            }
+
+            function showModal() {
+                var overlay = document.createElement('div');
+                overlay.id = 'accessModalOverlay';
+                overlay.className = 'access-modal-overlay';
+                overlay.innerHTML = '<div class="access-modal-content">' +
+                    '<h3>Access Restricted</h3>' +
+                    '<p>Due to client confidentiality agreements, I\'m not able to display this project publicly.</p>' +
+                    '<p>If you\'d like access to view it, please reach out to me at <a href="mailto:aluizaalthoff@gmail.com">aluizaalthoff@gmail.com</a> and I\'ll be happy to share it privately.</p>' +
+                    '<input type="password" id="accessCodeInput" placeholder="Enter access code" autocomplete="off">' +
+                    '<div class="error-message" id="errorMessage">Incorrect code. Please try again.</div>' +
+                    '<div style="margin-top: 20px;">' +
+                    '<button onclick="checkAccessCode()">Submit</button>' +
+                    '<button class="cancel-btn" onclick="window.location.href=\'index.html\'">Cancel</button>' +
+                    '</div>' +
+                    '</div>';
+                document.body.appendChild(overlay);
+                
+                setTimeout(function() {
+                    var input = document.getElementById('accessCodeInput');
+                    if (input) input.focus();
+                }, 100);
+            }
+
+            window.checkAccessCode = function() {
+                var input = document.getElementById('accessCodeInput');
+                var errorMsg = document.getElementById('errorMessage');
+                if (input.value === ACCESS_CODE) {
+                    sessionStorage.setItem(STORAGE_KEY, 'true');
+                    revealPage();
+                } else {
+                    errorMsg.style.display = 'block';
+                    input.value = '';
+                    input.focus();
+                }
+            };
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && document.getElementById('accessModalOverlay')) {
+                    checkAccessCode();
+                }
+            });
+
+            if (document.body) {
+                showModal();
+            } else {
+                document.addEventListener('DOMContentLoaded', showModal);
+            }
+        })();
+    </script>
 </head>
 
 <body class="preloader cursor-anim-enable dark-nav">
@@ -213,7 +388,7 @@
 
         <!-- COVER -->
         <section id="up" class="pos-rel bg-img-cover"
-            style="background-image:url(assets/images/projects/brand_capsules/brand-capsules-cover.webp)">
+            style="background-image:url(assets/images/projects/salesforce/salesforce-cover.webp)">
             <!-- bg-overlay -->
             <div class="bg-overlay-black">
 
@@ -223,7 +398,7 @@
                     <!-- title start -->
                     <h2 class="headline-xxxxl text-center hidden-box">
                         <span class="anim-slide">
-                            Brand capsules
+                            Salesforce:<br>Enterprise Event Experiences
                         </span>
                     </h2>
                     <!-- title end -->
@@ -232,7 +407,7 @@
                         <div class="four-columns column-50-100 padding-top-1 text-center">
                             <span class="hidden-box d-inline-block">
                                 <span class="subhead-xxs anim-reveal">
-                                    Branding
+                                    Branded Experiences
                                 </span>
                             </span>
                         </div>
@@ -246,7 +421,7 @@
                         <div class="four-columns column-50-100 padding-top-1 text-center">
                             <span class="hidden-box d-inline-block">
                                 <span class="subhead-xxs anim-reveal tr-delay-04">
-                                    Worldwide
+                                    Toronto 2021/2022
                                 </span>
                             </span>
                         </div>
@@ -266,17 +441,27 @@
                         <ul class="list js-scrollanim">
                             <li class="list__item red dot hidden-box">
                                 <div class="subhead-xxs anim-slide tr-delay-03">
-                                    Scalable design foundations
+                                    Custom RSVP microsites & event digital assets
                                 </div>
                             </li>
                             <li class="list__item red dot hidden-box">
                                 <div class="subhead-xxs anim-slide tr-delay-03">
-                                    Tailored to each business
+                                    Branded gift packaging & promotional materials for corporate partnerships
                                 </div>
                             </li>
                             <li class="list__item red dot hidden-box">
                                 <div class="subhead-xxs anim-slide tr-delay-03">
-                                    Accessible, quality branding
+                                    Brand identity adaptation across partnership ecosystems
+                                </div>
+                            </li>
+                            <li class="list__item red dot hidden-box">
+                                <div class="subhead-xxs anim-slide tr-delay-03">
+                                    Personalized gifting strategies based on client research
+                                </div>
+                            </li>
+                            <li class="list__item red dot hidden-box">
+                                <div class="subhead-xxs anim-slide tr-delay-03">
+                                    Cross-functional collaboration to ensure brand consistency
                                 </div>
                             </li>
                         </ul>
@@ -288,8 +473,7 @@
                     <div class="eight-columns column-100-100 padding-top-60">
                         <div class="column-l-margin-40-999">
                             <p class="body-text-m anim-text-reveal js-scrollanim">
-                                Branding Capsules are compact design packages — logos and color systems tailored for
-                                startups and small businesses who need professional branding that fits their budget.
+                                During my time at Pixel Dreams, I worked extensively with Salesforce teams to design custom branded experiences for their enterprise B2B events and high-profile partnerships. Each project required translating complex brand relationships into cohesive visual ecosystems, from digital RSVP platforms to physical event materials and personalized client gifting.
                             </p>
                         </div>
                     </div>
@@ -309,20 +493,17 @@
             <div class="pos-rel  container">
                 <div class="container small">
 
-                    <!-- MOZZA -->
+                    <!-- Salesforce x Coca-Cola -->
                     <div class="padding-top-60">
                         <!-- text start -->
                         <div class="four-columns column-100-100 padding-top-bottom-20">
                             <h2 class="headline-xxs text-color-black js-scrollanim">
                                 <span class="hidden-box d-block">
                                     <span class="anim-slide">
-                                        Mozzafiato
+                                        Salesforce x Coca-Cola Co-Branded Denim Jacket
                                     </span>
                                     <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-                                        Mozzafiato is a coffee brand built on the idea of awakening the senses. The
-                                        identity reflects sophistication and simplicity. It captures the luxury of
-                                        pausing from daily demands, like a quiet morning in the mountains. A moment of
-                                        reflection, stillness, and aroma.
+                                        Custom co-branded denim jacket designed for Salesforce's account-based marketing initiative with Coca-Cola, featuring multiple design concepts that merged both brand identities into premium wearable gifting. Digital assets included email banners and redemption page graphics to guide recipients through the gift experience.
                                     </p>
                                 </span>
 
@@ -332,36 +513,34 @@
                         <div class="carousel">
                             <div class="carousel-track">
                                 <div class="carousel-slide active">
-                                    <img src="assets/images/projects/brand_capsules/mozzafiato/mozzafiato-logo.webp"
-                                        alt="logo">
-                                    <p class="carousel-caption">A minimal coffee-mug form paired with handwritten script
-                                        for intimacy, balanced by a modern sans serif that reinforces simplicity and the
-                                        experience.</p>
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-email-banner.webp"
+                                        alt="email banner">
+                                    <p class="carousel-caption">Email banner</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/mozzafiato/mozzafiato-moodboard.webp"
-                                        alt="moodboard">
-                                    <p class="carousel-caption">Rustic textures, serene landscapes, and cozy interiors
-                                        that merge natural greens with coffee warmth, evoking duality and balance.</p>
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-redemption-page-banner.webp"
+                                        alt="redemption page banner">
+                                    <p class="carousel-caption">Redemption page banner</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/mozzafiato/mozzafiato-colors.webp"
-                                        alt="colors">
-                                    <p class="carousel-caption">Earthy browns and crema tones contrasted with cool
-                                        greens. Each color anchors serenity and richness, guiding the brand’s design
-                                        language.</p>
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-jacket-option-1.webp"
+                                        alt="jacket option 1">
+                                    <p class="carousel-caption">Jacket option 1</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/mozzafiato/mozzafiato-typography.webp"
-                                        alt="typography">
-                                    <p class="carousel-caption">Handwritten script adds personality, while a clean sans
-                                        serif provides structure.</p>
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-jacket-option-2.webp"
+                                        alt="jacket option 2">
+                                    <p class="carousel-caption">Jacket option 2</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/mozzafiato/mozzafiato-application.webp"
-                                        alt="application">
-                                    <p class="carousel-caption">From packaging to digital layouts, every touchpoint
-                                        communicates an elevated pause: coffee as a moment of stillness and luxury.</p>
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-jacket-option-3.webp"
+                                        alt="jacket option 3">
+                                    <p class="carousel-caption">Jacket option 3</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/salesforce/coke/sf-coke-pin.webp"
+                                        alt="pin">
+                                    <p class="carousel-caption">Branded pin</p>
                                 </div>
                             </div>
 
@@ -376,26 +555,25 @@
                                 <span class="dot active"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
                             </div>
                         </div>
                     </div>
-                    <!-- MOZZA ENDS -->
+                    <!-- Salesforce x Coca-Cola ENDS -->
 
-                    <!-- WF -->
-                    <div class="padding-top-60">
+                    <!-- Salesforce x DocuSign -->
+                    <div class="padding-top-bottom-60">
                         <!-- text start -->
                         <div class="four-columns column-100-100 padding-top-bottom-20">
                             <h2 class="headline-xxs text-color-black js-scrollanim">
                                 <span class="hidden-box d-block">
                                     <span class="anim-slide">
-                                        Wood Floors Pro
+                                        Salesforce x DocuSign Race for the Trees Challenge
                                     </span>
                                     <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-                                        Wood Floors Pro is a flooring company specializing in installation, refinishing,
-                                        and custom solutions for hardwood, vinyl, laminate, trim, and plywood. The brand
-                                        identity was designed to communicate craftsmanship, trust, and durability. By
-                                        combining geometric precision with organic textures, the visual language conveys
-                                        both technical expertise and the natural richness of wood.
+                                        Email campaign and digital assets designed for a sustainability partnership between Salesforce and DocuSign, encouraging employees to participate in a charity miles challenge with matched donations for reforestation efforts.
                                     </p>
                                 </span>
 
@@ -405,40 +583,34 @@
                         <div class="carousel">
                             <div class="carousel-track">
                                 <div class="carousel-slide active">
-                                    <img src="assets/images/projects/brand_capsules/woodfloor/woodfloor-logo.webp"
-                                        alt="logo">
-                                    <p class="carousel-caption">The “WF” monogram is built with clean, structured lines
-                                        that suggest both precision and professionalism. Its design also echoes the
-                                        linear patterns of wood planks, reinforcing the company’s core expertise.</p>
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-event-page.webp"
+                                        alt="event page">
+                                    <p class="carousel-caption">Event page</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/woodfloor/woodfloor-moodboard.webp"
-                                        alt="moodboard">
-                                    <p class="carousel-caption">A collection of textures and references inspired by
-                                        geometry, natural materials, and timeless craftsmanship. The imagery highlights
-                                        strength, structure, and the enduring value of quality flooring.</p>
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-email.webp"
+                                        alt="email">
+                                    <p class="carousel-caption">Email</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/woodfloor/woodfloor-colors.webp"
-                                        alt="colors">
-                                    <p class="carousel-caption">Neutral stone, muted greens, warm wood tones, and deep
-                                        browns form a palette rooted in nature and durability. These shades reinforce
-                                        the brand’s connection to authenticity and resilience.
-                                    </p>
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-redemption-page-banner.webp"
+                                        alt="redemption page">
+                                    <p class="carousel-caption">Redemption page</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/woodfloor/woodfloor-typography.webp"
-                                        alt="typography">
-                                    <p class="carousel-caption">A sophisticated serif communicates elegance and
-                                        heritage, while Gotham provides a modern, utilitarian complement. Together, they
-                                        balance authority with clarity across all touchpoints.</p>
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-shirt.webp"
+                                        alt="shirt">
+                                    <p class="carousel-caption">Shirt</p>
                                 </div>
                                 <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/woodfloor/woodfloor-application.webp"
-                                        alt="application">
-                                    <p class="carousel-caption">From business cards to service communications, the
-                                        identity system delivers consistency and professionalism. It reflects the
-                                        company’s promise: high-quality flooring solutions built to last.</p>
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-gift-box.webp"
+                                        alt="box">
+                                    <p class="carousel-caption">Gift box</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="assets/images/projects/salesforce/docusign/sf-docusign-postcard.webp"
+                                        alt="postcard">
+                                    <p class="carousel-caption">Postcard</p>
                                 </div>
                             </div>
 
@@ -453,156 +625,13 @@
                                 <span class="dot active"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- WF ENDS -->
-
-                    <!-- SEA -->
-                    <div class="padding-top-60">
-                        <!-- text start -->
-                        <div class="four-columns column-100-100 padding-top-bottom-20">
-                            <h2 class="headline-xxs text-color-black js-scrollanim">
-                                <span class="hidden-box d-block">
-                                    <span class="anim-slide">
-                                        Sea swimwear
-                                    </span>
-                                    <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-                                        Sea Swimwear was created to embody lightness, simplicity, and the tropical
-                                        spirit of summer. The brand reflects femininity and freshness, blending comfort
-                                        with sophistication for special moments, from a beach luau to a boat party.
-                                        Inspired by soft tones and candy colors the client loved, the identity conveys
-                                        youth, quality, and a chic yet effortless style.
-                                    </p>
-                                </span>
-
-                            </h2>
-                        </div>
-                        <!-- text ends -->
-                        <div class="carousel">
-                            <div class="carousel-track">
-                                <div class="carousel-slide active">
-                                    <img src="assets/images/projects/brand_capsules/sea/sea-logo.webp" alt="logo">
-                                    <p class="carousel-caption">A flowing script that mirrors the movement of waves and
-                                        the freedom of the sea.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/sea/sea-moodboard.webp"
-                                        alt="moodboard">
-                                    <p class="carousel-caption">Tropical landscapes, sunsets, and coastal living
-                                        expressed through images that feel light and feminine. A youthful atmosphere
-                                        that captures freedom and freshness.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/sea/sea-colors.webp" alt="colors">
-                                    <p class="carousel-caption">Soft pastel shades and summer-inspired hues. The palette
-                                        reflects delicacy, tropical energy, and the vibrancy of sunny days.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/sea/sea-typography.webp"
-                                        alt="typography">
-                                    <p class="carousel-caption">A modern handwritten typeface adds spontaneity and
-                                        freshness, while Cinzel introduces elegance and structure, adding refinement to
-                                        the brand’s youthful spirit.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/sea/sea-application.webp"
-                                        alt="application">
-                                    <p class="carousel-caption">From hang tags to packaging, the identity communicates
-                                        lightness and style. Every detail reinforces the promise of quality and the
-                                        feeling of experiencing summer with freedom and sophistication.</p>
-                                </div>
-                            </div>
-
-                            <!-- Arrows styled like popup navigation -->
-                            <button type="button"
-                                class="carousel-arrow mfp-arrow mfp-arrow-left js-pointer-large"></button>
-                            <button type="button"
-                                class="carousel-arrow mfp-arrow mfp-arrow-right js-pointer-large"></button>
-
-                            <!-- Navigation dots -->
-                            <div class="carousel-dots">
-                                <span class="dot active"></span>
+                                <span class="dot"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                             </div>
                         </div>
                     </div>
-                    <!-- SEA ENDS -->
-
-                    <!-- HAY -->
-                    <div class="padding-top-60">
-                        <!-- text start -->
-                        <div class="four-columns column-100-100 padding-top-bottom-20">
-                            <h2 class="headline-xxs text-color-black js-scrollanim">
-                                <span class="hidden-box d-block">
-                                    <span class="anim-slide">
-                                        Hayanne Goston
-                                    </span>
-                                    <p class="body-text-m text-color-black margin-top-20 anim-text-reveal tr-delay-02">
-                                        Hayanne Goston is a wedding and event designer whose brand identity reflects
-                                        elegance, warmth, and the artistry of celebration. Rooted in intimacy and
-                                        timeless beauty, her visual language conveys sensitivity, merging natural
-                                        inspiration, delicate typography, and a refined palette. This capsule captures a
-                                        brand built to honor life’s most meaningful moments with grace and detail.
-                                    </p>
-                                </span>
-
-                            </h2>
-                        </div>
-                        <!-- text ends -->
-                        <div class="carousel">
-                            <div class="carousel-track">
-                                <div class="carousel-slide active">
-                                    <img src="assets/images/projects/brand_capsules/hay/hay-logo.webp" alt="logo">
-                                    <p class="carousel-caption">A hand-drawn floral illustration paired with a flowing
-                                        script signature. The logo feels organic and personal, embodying Hayanne’s
-                                        handcrafted approach to event design.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/hay/hay-moodboard.webp"
-                                        alt="moodboard">
-                                    <p class="carousel-caption">A visual world steeped in intimacy and nostalgia:
-                                        vintage objects, soft florals, golden light, and textures that evoke timeless
-                                        romance.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/hay/hay-colors.webp" alt="colors">
-                                    <p class="carousel-caption">Neutral creams, vintage pinks, and muted greens form a
-                                        palette that is both delicate and refined, grounding the brand in nature and
-                                        sophistication.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/hay/hay-typography.webp"
-                                        alt="typography">
-                                    <p class="carousel-caption">A delicate script typeface reinforces the personal and
-                                        artisanal spirit of the brand, while a sans serif supports clarity and practical
-                                        usage across applications.</p>
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/images/projects/brand_capsules/hay/hay-application.webp"
-                                        alt="application">
-                                    <p class="carousel-caption">From stationery and business cards to event visuals, the
-                                        identity translates into refined, elegant touchpoints that celebrate love and
-                                        memory.</p>
-                                </div>
-                            </div>
-
-                            <!-- Arrows styled like popup navigation -->
-                            <button type="button"
-                                class="carousel-arrow mfp-arrow mfp-arrow-left js-pointer-large"></button>
-                            <button type="button"
-                                class="carousel-arrow mfp-arrow mfp-arrow-right js-pointer-large"></button>
-
-                            <!-- Navigation dots -->
-                            <div class="carousel-dots">
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- HAY ENDS -->
+                    <!-- Salesforce x DocuSign ENDS -->
 
 
 
@@ -614,7 +643,8 @@
         </section>
 
         <!-- next project start -->
-        <section class="pos-rel bg-img-cover" style="background-image:url(assets/images/projects/salsa/salsa-cover.webp)">
+        <section class="pos-rel bg-img-cover"
+            style="background-image:url(assets/images/projects/brand_capsules/brand-capsules-cover.webp)">
             <!-- bg-overlay -->
             <div class="bg-overlay-black"></div>
             <!-- pos-rel start -->
@@ -625,13 +655,14 @@
 
                         <!-- title start -->
                         <div class="margin-top-10 margin-bottom-30">
-                            <a href="project_salsa.html" class="d-block hidden-box js-pointer-large js-animsition-link">
-                                <h2 class="headline-xxxxl anim-slide">Salsa in Toronto</h2>
+                            <a href="project_brand_capsules.html"
+                                class="d-block hidden-box js-pointer-large js-animsition-link">
+                                <h2 class="headline-xxxxl anim-slide">Brand Capsules</h2>
                             </a>
                         </div><!-- title end -->
 
                         <!-- button start -->
-                        <a href="project_salsa.html"
+                        <a href="project_brand_capsules.html"
                             class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
                             <span class="skew-btn__box">
                                 <span class="skew-btn__content">Explore</span>
